@@ -7,6 +7,7 @@
 //
 
 #import "MBAppDelegate.h"
+#import "YAML.framework/Headers/YAMLSerialization.h"
 
 @implementation MBAppDelegate
 
@@ -17,7 +18,14 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    NSInputStream *stream = [[NSInputStream alloc] initWithFileAtPath: [[NSBundle mainBundle] pathForResource:@"items" ofType:@"yaml"]];
+
+    
+    NSMutableArray* yaml = [YAMLSerialization YAMLWithStream: stream
+                                        options: kYAMLReadOptionStringScalars
+                                          error: nil];
+    NSLog(@"%@", yaml);
+    
 }
 
 @end
