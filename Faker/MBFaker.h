@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YAML.framework/Headers/YAMLSerialization.h"
 
 @interface MBFaker : NSObject
 

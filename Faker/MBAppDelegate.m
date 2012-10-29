@@ -7,7 +7,7 @@
 //
 
 #import "MBAppDelegate.h"
-#import "YAML.framework/Headers/YAMLSerialization.h"
+#import "MBFaker.h"
 
 @implementation MBAppDelegate
 
@@ -18,13 +18,18 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    NSInputStream *stream = [[NSInputStream alloc] initWithFileAtPath: [[NSBundle mainBundle] pathForResource:@"items" ofType:@"yaml"]];
-
+//    NSArray* arr = [[NSBundle mainBundle] pathsForResourcesOfType:@"yaml" inDirectory:@""];
+//    NSLog(@"%@", [[arr objectAtIndex:0] class]);
+//    
+//    NSInputStream *stream = [[NSInputStream alloc] initWithFileAtPath: [[NSBundle mainBundle] pathsForResourcesOfType:@"yaml" inDirectory:@""]];
+//
+//    
+//    NSMutableArray* yaml = [YAMLSerialization YAMLWithStream: stream
+//                                        options: kYAMLReadOptionStringScalars
+//                                              error: nil];
+//    NSLog(@"%@", [[yaml objectAtIndex:0] class]);
     
-    NSMutableArray* yaml = [YAMLSerialization YAMLWithStream: stream
-                                        options: kYAMLReadOptionStringScalars
-                                          error: nil];
-    NSLog(@"%@", yaml);
+    NSLog(@"%@", [[MBFaker translations] allKeys]);
     
 }
 

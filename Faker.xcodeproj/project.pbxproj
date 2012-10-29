@@ -18,9 +18,23 @@
 		85A52BFC163EB6650067F252 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85A52BFA163EB6650067F252 /* InfoPlist.strings */; };
 		85A52BFF163EB6650067F252 /* FakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A52BFE163EB6650067F252 /* FakerTests.m */; };
 		85A52C0A163EB6900067F252 /* MBFaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A52C09163EB6900067F252 /* MBFaker.m */; };
-		85A52E0E163EBFF70067F252 /* items.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E0D163EBFF70067F252 /* items.yaml */; };
 		85A52E25163EC66C0067F252 /* YAML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A52E24163EC66C0067F252 /* YAML.framework */; };
 		85A52E26163EC66C0067F252 /* YAML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A52E24163EC66C0067F252 /* YAML.framework */; };
+		85A52E3D163ECECE0067F252 /* de-ch.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E2E163ECECE0067F252 /* de-ch.yml */; };
+		85A52E3E163ECECE0067F252 /* de.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E2F163ECECE0067F252 /* de.yml */; };
+		85A52E3F163ECECE0067F252 /* en-au.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E30163ECECE0067F252 /* en-au.yml */; };
+		85A52E40163ECECE0067F252 /* en-bork.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E31163ECECE0067F252 /* en-bork.yml */; };
+		85A52E41163ECECE0067F252 /* en-ca.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E32163ECECE0067F252 /* en-ca.yml */; };
+		85A52E42163ECECE0067F252 /* en-gb.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E33163ECECE0067F252 /* en-gb.yml */; };
+		85A52E43163ECECE0067F252 /* en-ind.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E34163ECECE0067F252 /* en-ind.yml */; };
+		85A52E44163ECECE0067F252 /* en-us.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E35163ECECE0067F252 /* en-us.yml */; };
+		85A52E45163ECECE0067F252 /* en.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E36163ECECE0067F252 /* en.yml */; };
+		85A52E46163ECECE0067F252 /* fr.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E37163ECECE0067F252 /* fr.yml */; };
+		85A52E47163ECECE0067F252 /* nl.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E38163ECECE0067F252 /* nl.yml */; };
+		85A52E48163ECECE0067F252 /* no-nb.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E39163ECECE0067F252 /* no-nb.yml */; };
+		85A52E49163ECECE0067F252 /* pl.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E3A163ECECE0067F252 /* pl.yml */; };
+		85A52E4A163ECECE0067F252 /* pt-br.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E3B163ECECE0067F252 /* pt-br.yml */; };
+		85A52E4B163ECECE0067F252 /* vi.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E3C163ECECE0067F252 /* vi.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +69,23 @@
 		85A52BFE163EB6650067F252 /* FakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakerTests.m; sourceTree = "<group>"; };
 		85A52C08163EB6900067F252 /* MBFaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFaker.h; sourceTree = "<group>"; };
 		85A52C09163EB6900067F252 /* MBFaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFaker.m; sourceTree = "<group>"; };
-		85A52E0D163EBFF70067F252 /* items.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = items.yaml; sourceTree = "<group>"; };
 		85A52E24163EC66C0067F252 /* YAML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YAML.framework; path = Faker/YAML.framework; sourceTree = "<group>"; };
 		85A52E27163EC6FD0067F252 /* yaml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = yaml.h; path = Faker/yaml.h; sourceTree = "<group>"; };
+		85A52E2E163ECECE0067F252 /* de-ch.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "de-ch.yml"; path = "Locales/de-ch.yml"; sourceTree = "<group>"; };
+		85A52E2F163ECECE0067F252 /* de.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = de.yml; path = Locales/de.yml; sourceTree = "<group>"; };
+		85A52E30163ECECE0067F252 /* en-au.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "en-au.yml"; path = "Locales/en-au.yml"; sourceTree = "<group>"; };
+		85A52E31163ECECE0067F252 /* en-bork.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "en-bork.yml"; path = "Locales/en-bork.yml"; sourceTree = "<group>"; };
+		85A52E32163ECECE0067F252 /* en-ca.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "en-ca.yml"; path = "Locales/en-ca.yml"; sourceTree = "<group>"; };
+		85A52E33163ECECE0067F252 /* en-gb.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "en-gb.yml"; path = "Locales/en-gb.yml"; sourceTree = "<group>"; };
+		85A52E34163ECECE0067F252 /* en-ind.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "en-ind.yml"; path = "Locales/en-ind.yml"; sourceTree = "<group>"; };
+		85A52E35163ECECE0067F252 /* en-us.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "en-us.yml"; path = "Locales/en-us.yml"; sourceTree = "<group>"; };
+		85A52E36163ECECE0067F252 /* en.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = en.yml; path = Locales/en.yml; sourceTree = "<group>"; };
+		85A52E37163ECECE0067F252 /* fr.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fr.yml; path = Locales/fr.yml; sourceTree = "<group>"; };
+		85A52E38163ECECE0067F252 /* nl.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = nl.yml; path = Locales/nl.yml; sourceTree = "<group>"; };
+		85A52E39163ECECE0067F252 /* no-nb.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "no-nb.yml"; path = "Locales/no-nb.yml"; sourceTree = "<group>"; };
+		85A52E3A163ECECE0067F252 /* pl.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = pl.yml; path = Locales/pl.yml; sourceTree = "<group>"; };
+		85A52E3B163ECECE0067F252 /* pt-br.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "pt-br.yml"; path = "Locales/pt-br.yml"; sourceTree = "<group>"; };
+		85A52E3C163ECECE0067F252 /* vi.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vi.yml; path = Locales/vi.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +155,7 @@
 		85A52BDA163EB6640067F252 /* Faker */ = {
 			isa = PBXGroup;
 			children = (
-				85A52E0D163EBFF70067F252 /* items.yaml */,
+				85A52E2D163ECE870067F252 /* Locales */,
 				85A52BE6163EB6640067F252 /* MBAppDelegate.h */,
 				85A52BE7163EB6640067F252 /* MBAppDelegate.m */,
 				85A52BE9163EB6650067F252 /* MainMenu.xib */,
@@ -167,6 +195,28 @@
 				85A52BFA163EB6650067F252 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85A52E2D163ECE870067F252 /* Locales */ = {
+			isa = PBXGroup;
+			children = (
+				85A52E2E163ECECE0067F252 /* de-ch.yml */,
+				85A52E2F163ECECE0067F252 /* de.yml */,
+				85A52E30163ECECE0067F252 /* en-au.yml */,
+				85A52E31163ECECE0067F252 /* en-bork.yml */,
+				85A52E32163ECECE0067F252 /* en-ca.yml */,
+				85A52E33163ECECE0067F252 /* en-gb.yml */,
+				85A52E34163ECECE0067F252 /* en-ind.yml */,
+				85A52E35163ECECE0067F252 /* en-us.yml */,
+				85A52E36163ECECE0067F252 /* en.yml */,
+				85A52E37163ECECE0067F252 /* fr.yml */,
+				85A52E38163ECECE0067F252 /* nl.yml */,
+				85A52E39163ECECE0067F252 /* no-nb.yml */,
+				85A52E3A163ECECE0067F252 /* pl.yml */,
+				85A52E3B163ECECE0067F252 /* pt-br.yml */,
+				85A52E3C163ECECE0067F252 /* vi.yml */,
+			);
+			name = Locales;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +294,21 @@
 				85A52BDF163EB6640067F252 /* InfoPlist.strings in Resources */,
 				85A52BE5163EB6640067F252 /* Credits.rtf in Resources */,
 				85A52BEB163EB6650067F252 /* MainMenu.xib in Resources */,
-				85A52E0E163EBFF70067F252 /* items.yaml in Resources */,
+				85A52E3D163ECECE0067F252 /* de-ch.yml in Resources */,
+				85A52E3E163ECECE0067F252 /* de.yml in Resources */,
+				85A52E3F163ECECE0067F252 /* en-au.yml in Resources */,
+				85A52E40163ECECE0067F252 /* en-bork.yml in Resources */,
+				85A52E41163ECECE0067F252 /* en-ca.yml in Resources */,
+				85A52E42163ECECE0067F252 /* en-gb.yml in Resources */,
+				85A52E43163ECECE0067F252 /* en-ind.yml in Resources */,
+				85A52E44163ECECE0067F252 /* en-us.yml in Resources */,
+				85A52E45163ECECE0067F252 /* en.yml in Resources */,
+				85A52E46163ECECE0067F252 /* fr.yml in Resources */,
+				85A52E47163ECECE0067F252 /* nl.yml in Resources */,
+				85A52E48163ECECE0067F252 /* no-nb.yml in Resources */,
+				85A52E49163ECECE0067F252 /* pl.yml in Resources */,
+				85A52E4A163ECECE0067F252 /* pt-br.yml in Resources */,
+				85A52E4B163ECECE0067F252 /* vi.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
