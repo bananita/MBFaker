@@ -7,7 +7,7 @@
 //
 
 #import "MBAppDelegate.h"
-#import "MBFaker.h"
+#import "MBFakerName.h"
 
 @implementation MBAppDelegate
 
@@ -29,8 +29,11 @@
 //                                              error: nil];
 //    NSLog(@"%@", [[yaml objectAtIndex:0] class]);
     
-    NSLog(@"%@", [[MBFaker translations] allKeys]);
+    NSMutableArray* arr = [[NSMutableArray alloc] init];
+    for (int i=0; i<100; i++)[ arr addObject:[MBFakerName firstName]];
     
+    
+    NSLog(@"%@", arr);
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  MBFaker.h
+//  MBFakerName.h
 //  Faker
 //
 //  Created by Michał Banasiak on 10/29/12.
@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MBFakerHelper.h"
+#import "MBFaker.h"
 
-@interface MBFaker : NSObject
+@interface MBFakerName : MBFaker
 
-+ (NSArray*)availableLanguages;
++ (NSString*)name;
++ (NSString*)firstName;
++ (NSString*)lastName;
 
 @end
