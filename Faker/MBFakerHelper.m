@@ -34,14 +34,14 @@
     return (NSDictionary*)translationsDictionary;
 }
 
-+ (NSDictionary*)dictionaryForLanguage:(NSString*)language {
-    NSDictionary* dictionary = [[MBFakerHelper translations] objectForKey:language];
++ (NSDictionary*)dictionaryForLanguage:(NSString*)language fromTranslationsDictionary:(NSDictionary*)translations {
+    NSDictionary* dictionary = [translations objectForKey:language];
     
     return [dictionary objectForKey:@"faker"];
 }
 
-+ (NSArray*)fetchDataWithKey:(NSString*)key withLanguage:(NSString*)language {
-    NSDictionary* dictionary = [MBFakerHelper dictionaryForLanguage:language];
++ (NSArray*)fetchDataWithKey:(NSString*)key withLanguage:(NSString*)language fromTranslationsDictionary:(NSDictionary*)translations {
+    NSDictionary* dictionary = [MBFakerHelper dictionaryForLanguage:language fromTranslationsDictionary:translations];
     
     NSArray* parsedKey = [key componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"."]];
     
@@ -59,30 +59,30 @@
     return nil;
 }
 
-+ (NSString*)fetchRandomElementWithKey:(NSString*)key withLanguage:(NSString*)language {
++ (NSString*)fetchRandomElementWithKey:(NSString*)key withLanguage:(NSString*)language fromTranslationsDictionary:(NSDictionary*)translations {
     NSString* lowercaseKey = [key lowercaseString];
     
-    NSArray* elements = [MBFakerHelper fetchDataWithKey:lowercaseKey withLanguage:language];
+    NSArray* elements = [MBFakerHelper fetchDataWithKey:lowercaseKey withLanguage:language fromTranslationsDictionary:translations];
     
     if ([elements count] > 0) {
         NSInteger randomIndex = arc4random() % [elements count];
         
         NSString* fetchedString = [elements objectAtIndex:randomIndex];
         
-        return [MBFakerHelper fetchDataWithTemplate:fetchedString withLanguage:language];
+        return [MBFakerHelper fetchDataWithTemplate:fetchedString withLanguage:language fromTranslationsDictionary:translations];
     }
     
     return nil;
 }
 
-+ (NSString*)fetchDataWithTemplate:(NSString*)dataTemplate withLanguage:(NSString*)language {
++ (NSString*)fetchDataWithTemplate:(NSString*)dataTemplate withLanguage:(NSString*)language fromTranslationsDictionary:(NSDictionary*)translations {
     NSRange hashRange = [dataTemplate rangeOfString:@"#"];
     
     if (hashRange.location != NSNotFound) {
         NSRange templateRange = [dataTemplate rangeOfString:@"#{"];
         
         if (templateRange.location == NSNotFound)
-            return [MBFakerHelper numberWithTemplate:dataTemplate];
+            return [MBFakerHelper numberWithTemplate:dataTemplate fromTranslationsDictionary:translations];
     }
     
     NSArray* components = [dataTemplate componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"{#}"]];
@@ -102,8 +102,8 @@
             if ([parsedElement compare:@" "] == 0)
                 fetchedString = [fetchedString stringByAppendingString:@" "];
             else {
-                NSString* stringToAppend = [MBFakerHelper fetchRandomElementWithKey:parsedElement withLanguage:language];
-            
+                NSString* stringToAppend = [MBFakerHelper fetchRandomElementWithKey:parsedElement withLanguage:language fromTranslationsDictionary:translations];
+                
                 fetchedString = [fetchedString stringByAppendingString:stringToAppend];
             }
                 
@@ -118,7 +118,7 @@
     return nil;
 }
 
-+ (NSString*)numberWithTemplate:(NSString *)numberTemplate {
++ (NSString*)numberWithTemplate:(NSString *)numberTemplate fromTranslationsDictionary:(NSDictionary*)translations {
     NSString* numberString = @"";
     
     for (int i=0; i<[numberTemplate length]; i++) {

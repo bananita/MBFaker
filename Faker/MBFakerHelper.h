@@ -11,10 +11,10 @@
 @interface MBFakerHelper : NSObject
 
 + (NSDictionary*)translations;
-+ (NSDictionary*)dictionaryForLanguage:(NSString*)language;
-+ (NSArray*)fetchDataWithKey:(NSString*)key withLanguage:(NSString*)language;
-+ (NSString*)fetchRandomElementWithKey:(NSString*)key withLanguage:(NSString*)language;
-+ (NSString*)fetchDataWithTemplate:(NSString*)dataTemplate withLanguage:(NSString*)language;
-+ (NSString*)numberWithTemplate:(NSString*)numberTemplate;
++ (NSDictionary*)dictionaryForLanguage:(NSString*)language fromTranslationsDictionary:(NSDictionary*)translations;
++ (NSArray*)fetchDataWithKey:(NSString*)key withLanguage:(NSString*)language fromTranslationsDictionary:(NSDictionary*)translations;
++ (NSString*)fetchRandomElementWithKey:(NSString*)key withLanguage:(NSString*)language fromTranslationsDictionary:(NSDictionary*)translations;
++ (NSString*)fetchDataWithTemplate:(NSString*)dataTemplate withLanguage:(NSString*)language fromTranslationsDictionary:(NSDictionary*)translations;
++ (NSString*)numberWithTemplate:(NSString*)numberTemplate fromTranslationsDictionary:(NSDictionary*)translations;
 
 @end

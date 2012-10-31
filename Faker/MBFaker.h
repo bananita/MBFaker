@@ -11,6 +11,12 @@
 
 @interface MBFaker : NSObject
 
-+ (NSArray*)availableLanguages;
+- (id)init;
+- (id)initWithLanguage:(NSString*)language;
+
+- (NSArray*)availableLanguages;
+- (NSString*)fetchStringWithKey:(NSString*)key;
+
+@property (nonatomic, copy) NSString* language;
 
 @end

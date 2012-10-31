@@ -60,8 +60,12 @@
 //    NSLog(@"%@", [MBFakerHelper dictionaryForLanguage:@"en"]);
 //    
 //    NSLog(@"%@", [MBFakerHelper fetchDataWithKey:@"name.first_name" withLanguage:@"en"]);
-    for (int i=0;i<1000 ;i++)
-    NSLog(@"%@", [MBFakerHelper fetchRandomElementWithKey:@"phone_number.formats" withLanguage:@"en"]);
+    MBFaker* faker = [[MBFaker alloc] initWithLanguage:@"en"];
+    
+    for (int i=0;i<10000 ;i++)
+    NSLog(@"%@", [faker fetchStringWithKey:@"address.street_address"]);
+    
+    [faker release];
 }
 
 @end
