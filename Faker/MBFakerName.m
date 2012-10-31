@@ -11,23 +11,23 @@
 @implementation MBFakerName
 
 + (NSString*)name {
-    
+    return [[MBFaker sharedFaker] fetchStringWithKey:@"name.name"];
 }
 
 + (NSString*)firstName {
-    NSArray* namesArray = [[MBFakerHelper fetchDataWithKey:@"name" withLanguage:@"en"] objectForKey:@"first_name"];
-    
-    NSInteger randomIndex = arc4random() % [namesArray count];
-    
-    return [namesArray objectAtIndex:randomIndex];
+    return [[MBFaker sharedFaker] fetchStringWithKey:@"name.first_name"];
 }
 
 + (NSString*)lastName {
-    NSArray* namesArray = [[MBFakerHelper fetchDataWithKey:@"name" withLanguage:@"en"] objectForKey:@"last_name"];
-    
-    NSInteger randomIndex = arc4random() % [namesArray count];
-    
-    return [namesArray objectAtIndex:randomIndex];
+    return [[MBFaker sharedFaker] fetchStringWithKey:@"name.last_name"];
+}
+
++ (NSString*)prefix {
+    return [[MBFaker sharedFaker] fetchStringWithKey:@"name.prefix"];
+}
+
++ (NSString*)suffix {
+    return [[MBFaker sharedFaker] fetchStringWithKey:@"name.suffix"];    
 }
 
 @end

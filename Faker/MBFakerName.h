@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "MBFaker.h"
 
-@interface MBFakerName : MBFaker
+@interface MBFakerName
 
 + (NSString*)name;
 + (NSString*)firstName;
 + (NSString*)lastName;
++ (NSString*)prefix;
++ (NSString*)suffix;
 
 @end

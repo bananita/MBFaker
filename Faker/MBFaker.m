@@ -12,26 +12,23 @@
     NSDictionary* translations;
 }
 
+- (void)fetchTranslations;
+
 @end
 
 @implementation MBFaker
 
-- (id)init {
-    self = [super init];
++ (MBFaker*)sharedFaker {
+    static MBFaker *sharedInstance = nil;
+    static dispatch_once_t onceToken;
     
-    if (self) {
-        translations = [[MBFakerHelper translations] retain];
-    }
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[MBFaker alloc] init];
+        [sharedInstance fetchTranslations];
+        sharedInstance.language = @"en";
+    });
     
-    return self;
-}
-
-- (id)initWithLanguage:(NSString*)language {
-    self = [self init];
-    
-    self.language = language;
-    
-    return self;
+    return sharedInstance;
 }
 
 - (NSArray*)availableLanguages {
@@ -40,6 +37,10 @@
 
 - (NSString *)fetchStringWithKey:(NSString *)key {
     return [MBFakerHelper fetchRandomElementWithKey:key withLanguage:_language fromTranslationsDictionary:translations];
+}
+
+- (void)fetchTranslations {
+    translations = [[MBFakerHelper translations] retain];
 }
 
 - (void)dealloc {
