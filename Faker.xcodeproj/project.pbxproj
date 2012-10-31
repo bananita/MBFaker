@@ -37,6 +37,7 @@
 		85A52E4B163ECECE0067F252 /* vi.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A52E3C163ECECE0067F252 /* vi.yml */; };
 		85A52E52163ED36C0067F252 /* MBFakerName.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A52E51163ED36C0067F252 /* MBFakerName.m */; };
 		85A52E55163ED53F0067F252 /* MBFakerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A52E54163ED53F0067F252 /* MBFakerHelper.m */; };
+		85A7539516419D7F00100128 /* MBFakerAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A7539416419D7F00100128 /* MBFakerAddress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		85A52E51163ED36C0067F252 /* MBFakerName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFakerName.m; sourceTree = "<group>"; };
 		85A52E53163ED53F0067F252 /* MBFakerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFakerHelper.h; sourceTree = "<group>"; };
 		85A52E54163ED53F0067F252 /* MBFakerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFakerHelper.m; sourceTree = "<group>"; };
+		85A7539316419D7F00100128 /* MBFakerAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFakerAddress.h; sourceTree = "<group>"; };
+		85A7539416419D7F00100128 /* MBFakerAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFakerAddress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,8 @@
 				85A52E51163ED36C0067F252 /* MBFakerName.m */,
 				85A52E53163ED53F0067F252 /* MBFakerHelper.h */,
 				85A52E54163ED53F0067F252 /* MBFakerHelper.m */,
+				85A7539316419D7F00100128 /* MBFakerAddress.h */,
+				85A7539416419D7F00100128 /* MBFakerAddress.m */,
 			);
 			path = Faker;
 			sourceTree = "<group>";
@@ -358,6 +363,7 @@
 				85A52C0A163EB6900067F252 /* MBFaker.m in Sources */,
 				85A52E52163ED36C0067F252 /* MBFakerName.m in Sources */,
 				85A52E55163ED53F0067F252 /* MBFakerHelper.m in Sources */,
+				85A7539516419D7F00100128 /* MBFakerAddress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

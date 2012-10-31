@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MBFakerHelper.h"
+#import "MBFakerName.h"
 
 @interface MBFaker : NSObject
 

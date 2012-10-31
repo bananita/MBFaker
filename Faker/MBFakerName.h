@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MBFaker.h"
 
 @interface MBFakerName
 

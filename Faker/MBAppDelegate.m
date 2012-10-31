@@ -7,7 +7,7 @@
 //
 
 #import "MBAppDelegate.h"
-#import "MBFakerName.h"
+#import "MBFaker.h"
 
 @implementation MBAppDelegate
 
