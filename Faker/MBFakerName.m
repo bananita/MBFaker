@@ -15,7 +15,7 @@
 }
 
 + (NSString*)firstName {
-    NSArray* namesArray = [[MBFakerHelper fetchDataType:@"name" withLanguage:@"en"] objectForKey:@"first_name"];
+    NSArray* namesArray = [[MBFakerHelper fetchDataWithKey:@"name" withLanguage:@"en"] objectForKey:@"first_name"];
     
     NSInteger randomIndex = arc4random() % [namesArray count];
     
@@ -23,7 +23,7 @@
 }
 
 + (NSString*)lastName {
-    NSArray* namesArray = [[MBFakerHelper fetchDataType:@"name" withLanguage:@"en"] objectForKey:@"last_name"];
+    NSArray* namesArray = [[MBFakerHelper fetchDataWithKey:@"name" withLanguage:@"en"] objectForKey:@"last_name"];
     
     NSInteger randomIndex = arc4random() % [namesArray count];
     

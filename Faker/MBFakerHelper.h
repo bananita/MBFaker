@@ -12,6 +12,9 @@
 
 + (NSDictionary*)translations;
 + (NSDictionary*)dictionaryForLanguage:(NSString*)language;
-+ (NSDictionary*)fetchDataType:(NSString*)key withLanguage:(NSString*)language;
++ (NSArray*)fetchDataWithKey:(NSString*)key withLanguage:(NSString*)language;
++ (NSString*)fetchRandomElementWithKey:(NSString*)key withLanguage:(NSString*)language;
++ (NSString*)fetchDataWithTemplate:(NSString*)dataTemplate withLanguage:(NSString*)language;
+
 
 @end

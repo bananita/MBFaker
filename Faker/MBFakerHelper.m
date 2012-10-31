@@ -40,11 +40,73 @@
     return [dictionary objectForKey:@"faker"];
 }
 
-+ (NSDictionary*)fetchDataType:(NSString*)key withLanguage:(NSString*)language {
++ (NSArray*)fetchDataWithKey:(NSString*)key withLanguage:(NSString*)language {
     NSDictionary* dictionary = [MBFakerHelper dictionaryForLanguage:language];
     
-    return [dictionary objectForKey:key];
+    NSArray* parsedKey = [key componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"."]];
+    
+    if ([parsedKey count] == 1)
+        return [dictionary objectForKey:key];
+    else {
+        id parsedObject = [dictionary objectForKey:[parsedKey objectAtIndex:0]];
+        
+        for (int i=1; i<[parsedKey count]; i++)
+            parsedObject = [parsedObject objectForKey:[parsedKey objectAtIndex:i]];
+        
+        return (NSArray*)parsedObject;
+    }
+    
+    return nil;
 }
 
++ (NSString*)fetchRandomElementWithKey:(NSString*)key withLanguage:(NSString*)language {
+    NSString* lowercaseKey = [key lowercaseString];
+    
+    NSArray* elements = [MBFakerHelper fetchDataWithKey:lowercaseKey withLanguage:language];
+    
+    if ([elements count] > 0) {
+        NSInteger randomIndex = arc4random() % [elements count];
+        
+        NSString* fetchedString = [elements objectAtIndex:randomIndex];
+        
+        return [MBFakerHelper fetchDataWithTemplate:fetchedString withLanguage:language];
+    }
+    
+    return nil;
+}
+
++ (NSString*)fetchDataWithTemplate:(NSString*)dataTemplate withLanguage:(NSString*)language {
+    NSArray* components = [dataTemplate componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"{#}"]];
+    
+    NSMutableArray* parsedTemplate = [[[NSMutableArray alloc] init] autorelease];
+    
+    for (NSString* component in components)
+        if ([component length] > 0)
+            [parsedTemplate addObject:component];
+    
+    if ([parsedTemplate count] == 1)
+        return [parsedTemplate objectAtIndex:0];
+    else {
+        NSString* fetchedString = @"";
+        
+        for (NSString* parsedElement in parsedTemplate) {
+            if ([parsedElement compare:@" "] == 0)
+                fetchedString = [fetchedString stringByAppendingString:@" "];
+            else {
+                NSString* stringToAppend = [MBFakerHelper fetchRandomElementWithKey:parsedElement withLanguage:language];
+            
+                fetchedString = [fetchedString stringByAppendingString:stringToAppend];
+            }
+                
+        }
+        
+        if ([fetchedString compare:@""] == 0)
+            return nil;
+        else
+            return fetchedString;
+    }
+    
+    return nil;
+}
 
 @end

@@ -29,11 +29,39 @@
 //                                              error: nil];
 //    NSLog(@"%@", [[yaml objectAtIndex:0] class]);
     
-    NSMutableArray* arr = [[NSMutableArray alloc] init];
-    for (int i=0; i<100; i++)[ arr addObject:[MBFakerName firstName]];
+//    NSMutableArray* arr = [[NSMutableArray alloc] init];
+//    for (int i=0; i<100; i++)[ arr addObject:[MBFakerName firstName]];
+//    
+//    
+//    NSLog(@"%@", arr);
     
+//NSString* 
+//    NSString* str = [[[[MBFakerHelper dictionaryForLanguage:@"en"] objectForKey:@"address"]objectForKey:@"city"] objectAtIndex:0];
+//    
+//    
+//    
+//    NSLog(@"%@", str);
+//    
+//    
+//    NSArray* arr = [str componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"{#}"]];
+//    
+//    NSMutableArray* arr2 = [[NSMutableArray alloc] init];
+//    
+//    for (NSString* str in arr) {
+//        if ([str length] > 0)
+//            [arr2 addObject:str];
+//    }
+//    NSLog(@"%@", arr2);
     
-    NSLog(@"%@", arr);
+//    NSString* str = @"aaa";
+//    
+//    NSLog(@"%@", [str componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"."]]);
+    
+//    NSLog(@"%@", [MBFakerHelper dictionaryForLanguage:@"en"]);
+//    
+//    NSLog(@"%@", [MBFakerHelper fetchDataWithKey:@"name.first_name" withLanguage:@"en"]);
+    for (int i=0;i<1000 ;i++)
+    NSLog(@"%@", [MBFakerHelper fetchRandomElementWithKey:@"address.city" withLanguage:@"en"]);
 }
 
 @end
