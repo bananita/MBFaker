@@ -15,6 +15,6 @@
 + (NSArray*)fetchDataWithKey:(NSString*)key withLanguage:(NSString*)language;
 + (NSString*)fetchRandomElementWithKey:(NSString*)key withLanguage:(NSString*)language;
 + (NSString*)fetchDataWithTemplate:(NSString*)dataTemplate withLanguage:(NSString*)language;
-
++ (NSString*)numberWithTemplate:(NSString*)numberTemplate;
 
 @end

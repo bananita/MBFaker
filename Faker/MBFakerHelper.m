@@ -76,6 +76,15 @@
 }
 
 + (NSString*)fetchDataWithTemplate:(NSString*)dataTemplate withLanguage:(NSString*)language {
+    NSRange hashRange = [dataTemplate rangeOfString:@"#"];
+    
+    if (hashRange.location != NSNotFound) {
+        NSRange templateRange = [dataTemplate rangeOfString:@"#{"];
+        
+        if (templateRange.location == NSNotFound)
+            return [MBFakerHelper numberWithTemplate:dataTemplate];
+    }
+    
     NSArray* components = [dataTemplate componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"{#}"]];
     
     NSMutableArray* parsedTemplate = [[[NSMutableArray alloc] init] autorelease];
@@ -107,6 +116,19 @@
     }
     
     return nil;
+}
+
++ (NSString*)numberWithTemplate:(NSString *)numberTemplate {
+    NSString* numberString = @"";
+    
+    for (int i=0; i<[numberTemplate length]; i++) {
+        if ([numberTemplate characterAtIndex:i] == '#')
+            numberString = [numberString stringByAppendingFormat:@"%d", arc4random()%10];
+        else
+            numberString = [numberString stringByAppendingFormat:@"%c", [numberTemplate characterAtIndex:i]];
+    }
+    
+    return numberString;
 }
 
 @end

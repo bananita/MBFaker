@@ -61,7 +61,7 @@
 //    
 //    NSLog(@"%@", [MBFakerHelper fetchDataWithKey:@"name.first_name" withLanguage:@"en"]);
     for (int i=0;i<1000 ;i++)
-    NSLog(@"%@", [MBFakerHelper fetchRandomElementWithKey:@"address.city" withLanguage:@"en"]);
+    NSLog(@"%@", [MBFakerHelper fetchRandomElementWithKey:@"phone_number.formats" withLanguage:@"en"]);
 }
 
 @end
