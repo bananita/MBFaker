@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MBFakerHelper.h"
 #import "MBFakerName.h"
+#import "MBFakerLorem.h"
 
 @interface MBFaker : NSObject
 

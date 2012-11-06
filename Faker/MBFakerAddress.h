@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MBFakerAddress
+@interface MBFakerAddress : NSObject
 
 + (NSString*)city;
 + (NSString*)streetName;

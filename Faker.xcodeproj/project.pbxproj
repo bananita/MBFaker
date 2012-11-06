@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		853F3C601649299300313A9F /* MBFakerLorem.m in Sources */ = {isa = PBXBuildFile; fileRef = 853F3C5F1649299300313A9F /* MBFakerLorem.m */; };
 		85A52BD5163EB6640067F252 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A52BD4163EB6640067F252 /* Cocoa.framework */; };
 		85A52BDF163EB6640067F252 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85A52BDD163EB6640067F252 /* InfoPlist.strings */; };
 		85A52BE1163EB6640067F252 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A52BE0163EB6640067F252 /* main.m */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		853F3C5E1649299300313A9F /* MBFakerLorem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFakerLorem.h; sourceTree = "<group>"; };
+		853F3C5F1649299300313A9F /* MBFakerLorem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFakerLorem.m; sourceTree = "<group>"; };
 		85A52BD0163EB6640067F252 /* Faker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A52BD4163EB6640067F252 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		85A52BD7163EB6640067F252 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -177,6 +180,8 @@
 				85A52E54163ED53F0067F252 /* MBFakerHelper.m */,
 				85A7539316419D7F00100128 /* MBFakerAddress.h */,
 				85A7539416419D7F00100128 /* MBFakerAddress.m */,
+				853F3C5E1649299300313A9F /* MBFakerLorem.h */,
+				853F3C5F1649299300313A9F /* MBFakerLorem.m */,
 			);
 			path = Faker;
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 				85A52E52163ED36C0067F252 /* MBFakerName.m in Sources */,
 				85A52E55163ED53F0067F252 /* MBFakerHelper.m in Sources */,
 				85A7539516419D7F00100128 /* MBFakerAddress.m in Sources */,
+				853F3C601649299300313A9F /* MBFakerLorem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

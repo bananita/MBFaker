@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MBFakerName
+@interface MBFakerName : NSObject
 
 + (NSString*)name;
 + (NSString*)firstName;
