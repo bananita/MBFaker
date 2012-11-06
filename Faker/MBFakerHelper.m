@@ -86,7 +86,7 @@
     }
     
     NSArray* components = [dataTemplate componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"{#}"]];
-    
+        
     NSMutableArray* parsedTemplate = [[[NSMutableArray alloc] init] autorelease];
     
     for (NSString* component in components)
@@ -104,7 +104,10 @@
             else {
                 NSString* stringToAppend = [MBFakerHelper fetchRandomElementWithKey:parsedElement withLanguage:language fromTranslationsDictionary:translations];
                 
-                fetchedString = [fetchedString stringByAppendingString:stringToAppend];
+                if (stringToAppend)
+                    fetchedString = [fetchedString stringByAppendingString:stringToAppend];
+                else
+                    fetchedString = [fetchedString stringByAppendingString:parsedElement];
             }
                 
         }
