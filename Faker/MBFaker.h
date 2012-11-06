@@ -10,6 +10,7 @@
 #import "MBFakerHelper.h"
 #import "MBFakerName.h"
 #import "MBFakerLorem.h"
+#import "MBFakerCompany.h"
 
 @interface MBFaker : NSObject
 
