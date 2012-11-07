@@ -5,13 +5,17 @@ This library is a port of Ruby's Faker library that generates fake data.
 You can use it for taking real-looking test data, screenshots and populate
 your database during development.
 
+To parse language files I use the YAML.framework [github](https://github.com/mirek/YAML.framework)
+
 Languages
-----------
+---------
 It works with original language files in yaml with small modifications.
 
 Default language is English. You can change it with setLanguage method
 
     [MBFaker setLanguage:@"en"];
+    
+Language name is just name of file with it.
 
 Usage
 -----
@@ -21,18 +25,7 @@ Usage
             
     NSString* name  = [MBFakerName name];
     NSString* email = [MBFakerInternet freeEmail];
-
-Customization
-------------
-
-Since you may want to make addresses and other types of data look different
-depending on where in the world you are (US postal codes vs. UK postal codes,
-for example), Faker uses the I18n gem to store strings (like state names) and
-formats (US postal codes are NNNNN while UK postal codes are AAN NAA),
-allowing you to get different formats by switching locales.  Just set
-Faker::Config.locale to the locale you want, and Faker will take care of the
-rest.
-
+    
 Contributing
 ------------
 If you'd like to contribute code or formats/data for another locale, fork
