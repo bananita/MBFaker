@@ -7,7 +7,8 @@
 //
 
 #import "MBFakerHelper.h"
-#import "YAML.framework/Headers/YAMLSerialization.h"
+#import "YAMLSerialization.h"
+
 
 @implementation MBFakerHelper
 
@@ -19,10 +20,9 @@
     for (NSString* path in translationPaths) {
         NSInputStream *stream = [[NSInputStream alloc] initWithFileAtPath: path];
         
-        
         NSMutableArray* yaml = [YAMLSerialization YAMLWithStream: stream
                                                          options: kYAMLReadOptionStringScalars
-                                                           error: nil];
+                                                           error: NULL];
         
         NSDictionary* dictionary = (NSDictionary*)[yaml objectAtIndex:0];
         
