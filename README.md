@@ -5,7 +5,7 @@ This library is a port of Ruby's Faker library that generates fake data.
 You can use it for taking real-looking test data, screenshots and populate
 your database during development.
 
-To parse language files it use [YAML.framework](https://github.com/mirek/YAML.framework)
+To parse language files it uses [YAML.framework](https://github.com/mirek/YAML.framework)
 
 Languages
 ---------
