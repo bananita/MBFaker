@@ -46,7 +46,6 @@
 		85A7CAD7164A715900208410 /* MBFakerLorem.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A7CABB164A715900208410 /* MBFakerLorem.m */; };
 		85A7CAD8164A715900208410 /* MBFakerName.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A7CABD164A715900208410 /* MBFakerName.m */; };
 		85A7CAD9164A715900208410 /* MBFakerPhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A7CABF164A715900208410 /* MBFakerPhoneNumber.m */; };
-		85A7CADA164A715900208410 /* YAML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A7CAC0164A715900208410 /* YAML.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,8 +112,6 @@
 		85A7CABD164A715900208410 /* MBFakerName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFakerName.m; sourceTree = "<group>"; };
 		85A7CABE164A715900208410 /* MBFakerPhoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFakerPhoneNumber.h; sourceTree = "<group>"; };
 		85A7CABF164A715900208410 /* MBFakerPhoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFakerPhoneNumber.m; sourceTree = "<group>"; };
-		85A7CAC0164A715900208410 /* YAML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YAML.framework; sourceTree = "<group>"; };
-		85A7CAC1164A715900208410 /* yaml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yaml.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +122,6 @@
 				85A7CA63164A711B00208410 /* UIKit.framework in Frameworks */,
 				85A7CA65164A711B00208410 /* Foundation.framework in Frameworks */,
 				85A7CA67164A711B00208410 /* CoreGraphics.framework in Frameworks */,
-				85A7CADA164A715900208410 /* YAML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +235,6 @@
 				85A7CABD164A715900208410 /* MBFakerName.m */,
 				85A7CABE164A715900208410 /* MBFakerPhoneNumber.h */,
 				85A7CABF164A715900208410 /* MBFakerPhoneNumber.m */,
-				85A7CAC0164A715900208410 /* YAML.framework */,
-				85A7CAC1164A715900208410 /* yaml.h */,
 			);
 			name = MBFaker;
 			path = ../MBFaker;

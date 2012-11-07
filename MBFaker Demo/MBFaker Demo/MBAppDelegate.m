@@ -10,6 +10,8 @@
 
 #import "MBViewController.h"
 
+#import "MBFaker.h"
+
 @implementation MBAppDelegate
 
 - (void)dealloc
@@ -26,6 +28,8 @@
     self.viewController = [[[MBViewController alloc] initWithNibName:@"MBViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    NSLog(@"%@", [MBFakerName name]);
     return YES;
 }
 
