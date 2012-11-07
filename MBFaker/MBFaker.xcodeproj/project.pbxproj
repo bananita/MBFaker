@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85A7C9CF164A706200208410 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A7C9CE164A706200208410 /* UIKit.framework */; };
+		85A7C9D1164A706200208410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A7C9D0164A706200208410 /* Foundation.framework */; };
+		85A7C9D3164A706200208410 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A7C9D2164A706200208410 /* CoreGraphics.framework */; };
+		85A7C9D5164A706200208410 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A7C9D4164A706200208410 /* CoreData.framework */; };
+		85A7C9DB164A706200208410 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85A7C9D9164A706200208410 /* InfoPlist.strings */; };
+		85A7C9DD164A706200208410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A7C9DC164A706200208410 /* main.m */; };
+		85A7C9E1164A706200208410 /* MBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A7C9E0164A706200208410 /* MBAppDelegate.m */; };
+		85A7C9E3164A706200208410 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A7C9E2164A706200208410 /* Default.png */; };
+		85A7C9E5164A706200208410 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A7C9E4164A706200208410 /* Default@2x.png */; };
+		85A7C9E7164A706200208410 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A7C9E6164A706200208410 /* Default-568h@2x.png */; };
+		85A7C9EA164A706200208410 /* MBFaker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85A7C9E8164A706200208410 /* MBFaker.xcdatamodeld */; };
+		85A7C9F2164A706200208410 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A7C9F1164A706200208410 /* SenTestingKit.framework */; };
+		85A7C9F3164A706200208410 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A7C9CE164A706200208410 /* UIKit.framework */; };
+		85A7C9F4164A706200208410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A7C9D0164A706200208410 /* Foundation.framework */; };
+		85A7C9F5164A706200208410 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A7C9D4164A706200208410 /* CoreData.framework */; };
+		85A7C9FD164A706200208410 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85A7C9FB164A706200208410 /* InfoPlist.strings */; };
+		85A7CA00164A706200208410 /* MBFakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A7C9FF164A706200208410 /* MBFakerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85A7C9F6164A706200208410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85A7C9C1164A706200208410 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85A7C9C9164A706200208410;
+			remoteInfo = MBFaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85A7C9CA164A706200208410 /* MBFaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBFaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A7C9CE164A706200208410 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		85A7C9D0164A706200208410 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		85A7C9D2164A706200208410 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		85A7C9D4164A706200208410 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		85A7C9D8164A706200208410 /* MBFaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBFaker-Info.plist"; sourceTree = "<group>"; };
+		85A7C9DA164A706200208410 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85A7C9DC164A706200208410 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85A7C9DE164A706200208410 /* MBFaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBFaker-Prefix.pch"; sourceTree = "<group>"; };
+		85A7C9DF164A706200208410 /* MBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBAppDelegate.h; sourceTree = "<group>"; };
+		85A7C9E0164A706200208410 /* MBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAppDelegate.m; sourceTree = "<group>"; };
+		85A7C9E2164A706200208410 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		85A7C9E4164A706200208410 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		85A7C9E6164A706200208410 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		85A7C9E9164A706200208410 /* MBFaker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MBFaker.xcdatamodel; sourceTree = "<group>"; };
+		85A7C9F0164A706200208410 /* MBFakerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBFakerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A7C9F1164A706200208410 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		85A7C9FA164A706200208410 /* MBFakerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBFakerTests-Info.plist"; sourceTree = "<group>"; };
+		85A7C9FC164A706200208410 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85A7C9FE164A706200208410 /* MBFakerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBFakerTests.h; sourceTree = "<group>"; };
+		85A7C9FF164A706200208410 /* MBFakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBFakerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85A7C9C7164A706200208410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A7C9CF164A706200208410 /* UIKit.framework in Frameworks */,
+				85A7C9D1164A706200208410 /* Foundation.framework in Frameworks */,
+				85A7C9D3164A706200208410 /* CoreGraphics.framework in Frameworks */,
+				85A7C9D5164A706200208410 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A7C9EC164A706200208410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A7C9F2164A706200208410 /* SenTestingKit.framework in Frameworks */,
+				85A7C9F3164A706200208410 /* UIKit.framework in Frameworks */,
+				85A7C9F4164A706200208410 /* Foundation.framework in Frameworks */,
+				85A7C9F5164A706200208410 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85A7C9BF164A706200208410 = {
+			isa = PBXGroup;
+			children = (
+				85A7C9D6164A706200208410 /* MBFaker */,
+				85A7C9F8164A706200208410 /* MBFakerTests */,
+				85A7C9CD164A706200208410 /* Frameworks */,
+				85A7C9CB164A706200208410 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85A7C9CB164A706200208410 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85A7C9CA164A706200208410 /* MBFaker.app */,
+				85A7C9F0164A706200208410 /* MBFakerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85A7C9CD164A706200208410 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85A7C9CE164A706200208410 /* UIKit.framework */,
+				85A7C9D0164A706200208410 /* Foundation.framework */,
+				85A7C9D2164A706200208410 /* CoreGraphics.framework */,
+				85A7C9D4164A706200208410 /* CoreData.framework */,
+				85A7C9F1164A706200208410 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85A7C9D6164A706200208410 /* MBFaker */ = {
+			isa = PBXGroup;
+			children = (
+				85A7C9DF164A706200208410 /* MBAppDelegate.h */,
+				85A7C9E0164A706200208410 /* MBAppDelegate.m */,
+				85A7C9E8164A706200208410 /* MBFaker.xcdatamodeld */,
+				85A7C9D7164A706200208410 /* Supporting Files */,
+			);
+			path = MBFaker;
+			sourceTree = "<group>";
+		};
+		85A7C9D7164A706200208410 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85A7C9D8164A706200208410 /* MBFaker-Info.plist */,
+				85A7C9D9164A706200208410 /* InfoPlist.strings */,
+				85A7C9DC164A706200208410 /* main.m */,
+				85A7C9DE164A706200208410 /* MBFaker-Prefix.pch */,
+				85A7C9E2164A706200208410 /* Default.png */,
+				85A7C9E4164A706200208410 /* Default@2x.png */,
+				85A7C9E6164A706200208410 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85A7C9F8164A706200208410 /* MBFakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				85A7C9FE164A706200208410 /* MBFakerTests.h */,
+				85A7C9FF164A706200208410 /* MBFakerTests.m */,
+				85A7C9F9164A706200208410 /* Supporting Files */,
+			);
+			path = MBFakerTests;
+			sourceTree = "<group>";
+		};
+		85A7C9F9164A706200208410 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85A7C9FA164A706200208410 /* MBFakerTests-Info.plist */,
+				85A7C9FB164A706200208410 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85A7C9C9164A706200208410 /* MBFaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85A7CA03164A706200208410 /* Build configuration list for PBXNativeTarget "MBFaker" */;
+			buildPhases = (
+				85A7C9C6164A706200208410 /* Sources */,
+				85A7C9C7164A706200208410 /* Frameworks */,
+				85A7C9C8164A706200208410 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBFaker;
+			productName = MBFaker;
+			productReference = 85A7C9CA164A706200208410 /* MBFaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85A7C9EF164A706200208410 /* MBFakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85A7CA06164A706200208410 /* Build configuration list for PBXNativeTarget "MBFakerTests" */;
+			buildPhases = (
+				85A7C9EB164A706200208410 /* Sources */,
+				85A7C9EC164A706200208410 /* Frameworks */,
+				85A7C9ED164A706200208410 /* Resources */,
+				85A7C9EE164A706200208410 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85A7C9F7164A706200208410 /* PBXTargetDependency */,
+			);
+			name = MBFakerTests;
+			productName = MBFakerTests;
+			productReference = 85A7C9F0164A706200208410 /* MBFakerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85A7C9C1164A706200208410 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MB;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Michał Banasiak";
+			};
+			buildConfigurationList = 85A7C9C4164A706200208410 /* Build configuration list for PBXProject "MBFaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 85A7C9BF164A706200208410;
+			productRefGroup = 85A7C9CB164A706200208410 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85A7C9C9164A706200208410 /* MBFaker */,
+				85A7C9EF164A706200208410 /* MBFakerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85A7C9C8164A706200208410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A7C9DB164A706200208410 /* InfoPlist.strings in Resources */,
+				85A7C9E3164A706200208410 /* Default.png in Resources */,
+				85A7C9E5164A706200208410 /* Default@2x.png in Resources */,
+				85A7C9E7164A706200208410 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A7C9ED164A706200208410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A7C9FD164A706200208410 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85A7C9EE164A706200208410 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85A7C9C6164A706200208410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A7C9DD164A706200208410 /* main.m in Sources */,
+				85A7C9E1164A706200208410 /* MBAppDelegate.m in Sources */,
+				85A7C9EA164A706200208410 /* MBFaker.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A7C9EB164A706200208410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A7CA00164A706200208410 /* MBFakerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85A7C9F7164A706200208410 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85A7C9C9164A706200208410 /* MBFaker */;
+			targetProxy = 85A7C9F6164A706200208410 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85A7C9D9164A706200208410 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85A7C9DA164A706200208410 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		85A7C9FB164A706200208410 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85A7C9FC164A706200208410 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85A7CA01164A706200208410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		85A7CA02164A706200208410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85A7CA04164A706200208410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBFaker/MBFaker-Prefix.pch";
+				INFOPLIST_FILE = "MBFaker/MBFaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		85A7CA05164A706200208410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBFaker/MBFaker-Prefix.pch";
+				INFOPLIST_FILE = "MBFaker/MBFaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		85A7CA07164A706200208410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MBFaker.app/MBFaker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBFaker/MBFaker-Prefix.pch";
+				INFOPLIST_FILE = "MBFakerTests/MBFakerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		85A7CA08164A706200208410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MBFaker.app/MBFaker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBFaker/MBFaker-Prefix.pch";
+				INFOPLIST_FILE = "MBFakerTests/MBFakerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85A7C9C4164A706200208410 /* Build configuration list for PBXProject "MBFaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A7CA01164A706200208410 /* Debug */,
+				85A7CA02164A706200208410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85A7CA03164A706200208410 /* Build configuration list for PBXNativeTarget "MBFaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A7CA04164A706200208410 /* Debug */,
+				85A7CA05164A706200208410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85A7CA06164A706200208410 /* Build configuration list for PBXNativeTarget "MBFakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A7CA07164A706200208410 /* Debug */,
+				85A7CA08164A706200208410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		85A7C9E8164A706200208410 /* MBFaker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				85A7C9E9164A706200208410 /* MBFaker.xcdatamodel */,
+			);
+			currentVersion = 85A7C9E9164A706200208410 /* MBFaker.xcdatamodel */;
+			path = MBFaker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 85A7C9C1164A706200208410 /* Project object */;
+}

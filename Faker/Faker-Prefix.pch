@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'Faker' target in the 'Faker' project
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-#endif
