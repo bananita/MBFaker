@@ -11,7 +11,7 @@ It works with original language files in yaml with small modifications.
 
 Default language is English. You can change it with setLanguage method
 
-    [[MBFaker sharedFaker] setLanguage:@"en"];
+    [MBFaker setLanguage:@"en"];
 
 Usage
 -----

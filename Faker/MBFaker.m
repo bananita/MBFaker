@@ -31,6 +31,10 @@
     return sharedInstance;
 }
 
++ (void)setLanguage:(NSString *)language {
+    [[MBFaker sharedFaker] setLanguage:language];
+}
+
 - (NSArray*)availableLanguages {
     return [[MBFakerHelper translations] allKeys];
 }

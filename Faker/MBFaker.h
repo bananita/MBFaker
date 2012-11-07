@@ -17,12 +17,11 @@
 @interface MBFaker : NSObject
 
 + (MBFaker*)sharedFaker;
++ (void)setLanguage:(NSString*)language;
 
 - (NSArray*)availableLanguages;
 - (NSString*)fetchStringWithKey:(NSString*)key;
 
 @property (nonatomic, copy) NSString* language;
-
-
 
 @end
