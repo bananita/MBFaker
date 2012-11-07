@@ -12,6 +12,7 @@
 #import "MBFakerLorem.h"
 #import "MBFakerCompany.h"
 #import "MBFakerPhoneNumber.h"
+#import "MBFakerInternet.h"
 
 @interface MBFaker : NSObject
 

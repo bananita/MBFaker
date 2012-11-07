@@ -41,6 +41,8 @@
 		85A52E52163ED36C0067F252 /* MBFakerName.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A52E51163ED36C0067F252 /* MBFakerName.m */; };
 		85A52E55163ED53F0067F252 /* MBFakerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A52E54163ED53F0067F252 /* MBFakerHelper.m */; };
 		85A7539516419D7F00100128 /* MBFakerAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A7539416419D7F00100128 /* MBFakerAddress.m */; };
+		85A7C971164A53C400208410 /* MBFakerInternet.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A7C970164A53C400208410 /* MBFakerInternet.m */; };
+		85A7C974164A665100208410 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 85A7C973164A665100208410 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,9 @@
 		85A52E54163ED53F0067F252 /* MBFakerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFakerHelper.m; sourceTree = "<group>"; };
 		85A7539316419D7F00100128 /* MBFakerAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFakerAddress.h; sourceTree = "<group>"; };
 		85A7539416419D7F00100128 /* MBFakerAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFakerAddress.m; sourceTree = "<group>"; };
+		85A7C96F164A53C400208410 /* MBFakerInternet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFakerInternet.h; sourceTree = "<group>"; };
+		85A7C970164A53C400208410 /* MBFakerInternet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFakerInternet.m; sourceTree = "<group>"; };
+		85A7C973164A665100208410 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +178,7 @@
 		85A52BDA163EB6640067F252 /* Faker */ = {
 			isa = PBXGroup;
 			children = (
+				85A7C973164A665100208410 /* README.md */,
 				85A52E2D163ECE870067F252 /* Locales */,
 				85A52BE6163EB6640067F252 /* MBAppDelegate.h */,
 				85A52BE7163EB6640067F252 /* MBAppDelegate.m */,
@@ -192,6 +198,8 @@
 				853F3C631649332D00313A9F /* MBFakerCompany.m */,
 				853F3C6516493C7300313A9F /* MBFakerPhoneNumber.h */,
 				853F3C6616493C7300313A9F /* MBFakerPhoneNumber.m */,
+				85A7C96F164A53C400208410 /* MBFakerInternet.h */,
+				85A7C970164A53C400208410 /* MBFakerInternet.m */,
 			);
 			path = Faker;
 			sourceTree = "<group>";
@@ -339,6 +347,7 @@
 				85A52E49163ECECE0067F252 /* pl.yml in Resources */,
 				85A52E4A163ECECE0067F252 /* pt-br.yml in Resources */,
 				85A52E4B163ECECE0067F252 /* vi.yml in Resources */,
+				85A7C974164A665100208410 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +391,7 @@
 				853F3C601649299300313A9F /* MBFakerLorem.m in Sources */,
 				853F3C641649332D00313A9F /* MBFakerCompany.m in Sources */,
 				853F3C6716493C7300313A9F /* MBFakerPhoneNumber.m in Sources */,
+				85A7C971164A53C400208410 /* MBFakerInternet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

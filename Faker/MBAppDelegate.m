@@ -63,7 +63,7 @@
     [[MBFaker sharedFaker] setLanguage:@"en"];
     
     for (int i=0;i<10000 ;i++)
-        NSLog(@"%@", [MBFakerPhoneNumber phoneNumber]);
+        NSLog(@"%@", [MBFakerInternet ipV6Address]);
 
 }
 
