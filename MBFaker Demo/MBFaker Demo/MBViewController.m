@@ -2,7 +2,7 @@
 //  MBViewController.m
 //  MBFaker Demo
 //
-//  Created by Michał Banasiak on 11/7/12.
+//  Created by Michał Banasiak on 11/9/12.
 //  Copyright (c) 2012 Michał Banasiak. All rights reserved.
 //
 
