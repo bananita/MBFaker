@@ -17,3 +17,6 @@ build/*
 *.pbxuser
 *.xcworkspace
 xcuserdata
+
+#emacs
+~*
