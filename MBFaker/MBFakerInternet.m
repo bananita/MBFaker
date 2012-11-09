@@ -12,11 +12,11 @@
 @implementation MBFakerInternet
 
 + (NSString*)email {
-    return [NSString stringWithFormat:@"%@@%@", [MBFakerInternet userName], [MBFakerInternet domainName]];
+    return [NSString stringWithFormat:@"%@@%@", [MBFakerInternet userName], [MBFakerInternet domainName] ];
 }
 
 + (NSString*)freeEmail {
-    return [NSString stringWithFormat:@"%@@%@", [MBFakerInternet userName], [[MBFaker sharedFaker] fetchStringWithKey:@"internet.free_email"]];
+    return [NSString stringWithFormat:@"%@@%@", [MBFakerInternet userName] , [[[MBFaker sharedFaker] fetchStringWithKey:@"internet.free_email"] lowercaseString]];
 }
 
 + (NSString*)safeEmail {
@@ -33,7 +33,7 @@
             [components addObject:[MBFakerName lastName]];
     }
     
-    return [components componentsJoinedByString:@"."];
+    return [[components componentsJoinedByString:@"."] lowercaseString];
 }
 
 + (NSString*)domainName {

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MBViewController : UIViewController
+@interface MBViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (retain, nonatomic) IBOutlet UITableView *tableView;
+@property (retain, nonatomic) IBOutlet UIBarButtonItem *buttonAdd;
+
+- (IBAction)buttonAdd:(id)sender;
 
 @end

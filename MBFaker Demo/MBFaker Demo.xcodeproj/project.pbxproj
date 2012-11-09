@@ -142,6 +142,9 @@
 		85A551BB164D34520038BCB6 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 85A5513D164D34520038BCB6 /* scanner.c */; };
 		85A551BC164D34520038BCB6 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 85A5513E164D34520038BCB6 /* writer.c */; };
 		85A551BD164D34520038BCB6 /* YAMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A55141164D34520038BCB6 /* YAMLSerialization.m */; };
+		85A551C9164D36F00038BCB6 /* MBTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A551C8164D36F00038BCB6 /* MBTableCell.m */; };
+		85A551CB164D370C0038BCB6 /* MBTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85A551CA164D370C0038BCB6 /* MBTableCell.xib */; };
+		85A551CE164D3D190038BCB6 /* MBPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A551CD164D3D190038BCB6 /* MBPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -297,6 +300,11 @@
 		85A5513F164D34520038BCB6 /* yaml_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yaml_private.h; sourceTree = "<group>"; };
 		85A55140164D34520038BCB6 /* YAMLSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAMLSerialization.h; sourceTree = "<group>"; };
 		85A55141164D34520038BCB6 /* YAMLSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAMLSerialization.m; sourceTree = "<group>"; };
+		85A551C7164D36F00038BCB6 /* MBTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBTableCell.h; sourceTree = "<group>"; };
+		85A551C8164D36F00038BCB6 /* MBTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBTableCell.m; sourceTree = "<group>"; };
+		85A551CA164D370C0038BCB6 /* MBTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MBTableCell.xib; sourceTree = "<group>"; };
+		85A551CC164D3D190038BCB6 /* MBPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPerson.h; sourceTree = "<group>"; };
+		85A551CD164D3D190038BCB6 /* MBPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -349,7 +357,12 @@
 				85A54D7D164D31A30038BCB6 /* MBViewController.h */,
 				85A54D7E164D31A30038BCB6 /* MBViewController.m */,
 				85A54D80164D31A30038BCB6 /* MBViewController.xib */,
+				85A551C7164D36F00038BCB6 /* MBTableCell.h */,
+				85A551C8164D36F00038BCB6 /* MBTableCell.m */,
 				85A54D6C164D31A30038BCB6 /* Supporting Files */,
+				85A551CA164D370C0038BCB6 /* MBTableCell.xib */,
+				85A551CC164D3D190038BCB6 /* MBPerson.h */,
+				85A551CD164D3D190038BCB6 /* MBPerson.m */,
 			);
 			path = "MBFaker Demo";
 			sourceTree = "<group>";
@@ -732,6 +745,7 @@
 				85A551B2164D34520038BCB6 /* reader.Plo in Resources */,
 				85A551B3164D34520038BCB6 /* scanner.Plo in Resources */,
 				85A551B4164D34520038BCB6 /* writer.Plo in Resources */,
+				85A551CB164D370C0038BCB6 /* MBTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,6 +776,8 @@
 				85A551BB164D34520038BCB6 /* scanner.c in Sources */,
 				85A551BC164D34520038BCB6 /* writer.c in Sources */,
 				85A551BD164D34520038BCB6 /* YAMLSerialization.m in Sources */,
+				85A551C9164D36F00038BCB6 /* MBTableCell.m in Sources */,
+				85A551CE164D3D190038BCB6 /* MBPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -845,6 +861,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MBFaker Demo/MBFaker Demo-Prefix.pch";
 				INFOPLIST_FILE = "MBFaker Demo/MBFaker Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -861,6 +878,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MBFaker Demo/MBFaker Demo-Prefix.pch";
 				INFOPLIST_FILE = "MBFaker Demo/MBFaker Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -885,6 +903,7 @@
 				85A54D87164D31A30038BCB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
