@@ -10,21 +10,21 @@
 
 @implementation MBTableCell
 
-+ (MBTableCell*) tableCellForPerson:(MBPerson *)person{
++ (MBTableCell*) tableCell {
     NSArray* xib = [[NSBundle mainBundle] loadNibNamed:@"MBTableCell" owner:nil options:nil];
     MBTableCell* tableCell = [xib objectAtIndex:0];
-    
-    tableCell.labelName.text = person.name;
-    tableCell.labelEmail.text = person.email;
-    tableCell.labelAddress.text = person.address;
-    tableCell.labelZipCode.text = person.zipCode;
-    tableCell.labelCity.text = person.city;
-    tableCell.textViewLorem.text = person.lorem;
     
     return tableCell;
 }
 
-
+- (void)setPerson:(MBPerson *)person {
+    self.labelName.text = person.name;
+    self.labelEmail.text = person.email;
+    self.labelAddress.text = person.address;
+    self.labelZipCode.text = person.zipCode;
+    self.labelCity.text = person.city;
+    self.textViewLorem.text = person.lorem;
+}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {

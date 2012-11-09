@@ -11,7 +11,9 @@
 
 @interface MBTableCell : UITableViewCell
 
-+ (MBTableCell*)tableCellForPerson:(MBPerson*)person;
++ (MBTableCell*)tableCell;
+
+- (void)setPerson:(MBPerson*)person;
 
 @property (retain, nonatomic) IBOutlet UILabel *labelName;
 @property (retain, nonatomic) IBOutlet UILabel *labelEmail;

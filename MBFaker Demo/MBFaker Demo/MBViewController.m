@@ -54,7 +54,15 @@
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [[MBTableCell tableCellForPerson:[people objectAtIndex:indexPath.row]] autorelease];
+    
+    MBTableCell* tableCell = [tableView dequeueReusableCellWithIdentifier:@"tableCell"];
+    
+    if (!tableCell)
+        tableCell = [[[MBTableCell tableCell] retain] autorelease];
+    
+    [tableCell setPerson:[people objectAtIndex:indexPath.row]];
+    
+    return tableCell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
