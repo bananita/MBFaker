@@ -7,8 +7,6 @@ your database during development.
 
 To parse language files it uses [YAML.framework](https://github.com/mirek/YAML.framework)
 
-![iOS Screenshot](https://raw.github.com/bananita/MBFaker/master/Screenshots/ios.png)
-
 Languages
 ---------
 It works with original language files in yaml with small modifications.
