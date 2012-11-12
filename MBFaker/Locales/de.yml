@@ -12,21 +12,21 @@ de:
       state: [Baden-Württemberg, Bayern, Berlin, Brandenburg, Bremen, Hamburg, Hessen, Mecklenburg-Vorpommern, Niedersachsen, Nordrhein-Westfalen, Rheinland-Pfalz, Saarland, Sachsen, Sachsen-Anhalt, Schleswig-Holstein, Thüringen]
       state_abbr: [BW, BY, BE, BB, HB, HH, HE, MV, NI, NW, RP, SL, SN, ST, SH, TH]
       city:
-        - "#{city_prefix} #{Name.first_name}#{city_suffix}"
-        - "#{city_prefix} #{Name.first_name}"
-        - "#{Name.first_name}#{city_suffix}"
-        - "#{Name.last_name}#{city_suffix}"
+        - "#{address.city_prefix} #{Name.first_name}#{city_suffix}"
+        - "#{address.city_prefix} #{Name.first_name}"
+        - "#{Name.first_name}#{address.city_suffix}"
+        - "#{Name.last_name}#{address.city_suffix}"
       street_name:
-        - "#{street_root}"
+        - "#{address.street_root}"
       street_address:
-        - "#{street_name} #{building_number}"
+        - "#{address.street_name} #{address.building_number}"
       default_country: [Deutschland]
 
     company:
       suffix: [GmbH, AG, Gruppe, KG, GmbH & Co. KG, UG, OHG]
       legal_form: [GmbH, AG, Gruppe, KG, GmbH & Co. KG, UG, OHG]
       name:
-        - "#{Name.last_name} #{suffix}"
+        - "#{Name.last_name} #{company.suffix}"
         - "#{Name.last_name}-#{Name.last_name}"
         - "#{Name.last_name}, #{Name.last_name} und #{Name.last_name}"
 
@@ -43,12 +43,12 @@ de:
       prefix: [Hr., Fr., Dr., Prof. Dr.]
       nobility_title_prefix: [zu, von, vom, von der]
       name:
-        - "#{prefix} #{first_name} #{last_name}"
-        - "#{first_name} #{nobility_title_prefix} #{last_name}"
-        - "#{first_name} #{last_name}"
-        - "#{first_name} #{last_name}"
-        - "#{first_name} #{last_name}"
-        - "#{first_name} #{last_name}"
+        - "#{name.prefix} #{name.first_name} #{name.last_name}"
+        - "#{name.first_name} #{name.nobility_title_prefix} #{name.last_name}"
+        - "#{name.name.first_name} #{name.last_name}"
+        - "#{name.first_name} #{name.last_name}"
+        - "#{name.first_name} #{name.last_name}"
+        - "#{name.first_name} #{name.last_name}"
 
     phone_number:
       formats: ['(0###) #########', '(0####) #######', '+49-###-#######', '+49-####-########']

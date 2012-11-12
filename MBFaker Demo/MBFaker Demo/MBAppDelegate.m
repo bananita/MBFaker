@@ -28,7 +28,7 @@
     self.viewController = [[[MBViewController alloc] initWithNibName:@"MBViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-
+    
     return YES;
 }
 

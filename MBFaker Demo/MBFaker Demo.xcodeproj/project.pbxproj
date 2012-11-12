@@ -18,21 +18,11 @@
 		85A54D7C164D31A30038BCB6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A54D7B164D31A30038BCB6 /* Default-568h@2x.png */; };
 		85A54D7F164D31A30038BCB6 /* MBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A54D7E164D31A30038BCB6 /* MBViewController.m */; };
 		85A54D82164D31A30038BCB6 /* MBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85A54D80164D31A30038BCB6 /* MBViewController.xib */; };
-		85A55142164D34520038BCB6 /* de-ch.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A550B4164D34520038BCB6 /* de-ch.yml */; };
 		85A55143164D34520038BCB6 /* de.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A550B5164D34520038BCB6 /* de.yml */; };
-		85A55144164D34520038BCB6 /* en-au.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A550B6164D34520038BCB6 /* en-au.yml */; };
-		85A55145164D34520038BCB6 /* en-bork.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A550B7164D34520038BCB6 /* en-bork.yml */; };
-		85A55146164D34520038BCB6 /* en-ca.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A550B8164D34520038BCB6 /* en-ca.yml */; };
-		85A55147164D34520038BCB6 /* en-gb.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A550B9164D34520038BCB6 /* en-gb.yml */; };
-		85A55148164D34520038BCB6 /* en-ind.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A550BA164D34520038BCB6 /* en-ind.yml */; };
-		85A55149164D34520038BCB6 /* en-us.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A550BB164D34520038BCB6 /* en-us.yml */; };
 		85A5514A164D34520038BCB6 /* en.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A550BC164D34520038BCB6 /* en.yml */; };
 		85A5514B164D34520038BCB6 /* fr.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A550BD164D34520038BCB6 /* fr.yml */; };
 		85A5514C164D34520038BCB6 /* nl.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A550BE164D34520038BCB6 /* nl.yml */; };
-		85A5514D164D34520038BCB6 /* no-nb.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A550BF164D34520038BCB6 /* no-nb.yml */; };
 		85A5514E164D34520038BCB6 /* pl.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A550C0164D34520038BCB6 /* pl.yml */; };
-		85A5514F164D34520038BCB6 /* pt-br.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A550C1164D34520038BCB6 /* pt-br.yml */; };
-		85A55150164D34520038BCB6 /* vi.yml in Resources */ = {isa = PBXBuildFile; fileRef = 85A550C2164D34520038BCB6 /* vi.yml */; };
 		85A55151164D34520038BCB6 /* MBFaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A550C4164D34520038BCB6 /* MBFaker.m */; };
 		85A55152164D34520038BCB6 /* MBFakerAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A550C6164D34520038BCB6 /* MBFakerAddress.m */; };
 		85A55153164D34520038BCB6 /* MBFakerCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A550C8164D34520038BCB6 /* MBFakerCompany.m */; };
@@ -82,21 +72,11 @@
 		85A54D7D164D31A30038BCB6 /* MBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBViewController.h; sourceTree = "<group>"; };
 		85A54D7E164D31A30038BCB6 /* MBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBViewController.m; sourceTree = "<group>"; };
 		85A54D81164D31A30038BCB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MBViewController.xib; sourceTree = "<group>"; };
-		85A550B4164D34520038BCB6 /* de-ch.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "de-ch.yml"; sourceTree = "<group>"; };
 		85A550B5164D34520038BCB6 /* de.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = de.yml; sourceTree = "<group>"; };
-		85A550B6164D34520038BCB6 /* en-au.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "en-au.yml"; sourceTree = "<group>"; };
-		85A550B7164D34520038BCB6 /* en-bork.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "en-bork.yml"; sourceTree = "<group>"; };
-		85A550B8164D34520038BCB6 /* en-ca.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "en-ca.yml"; sourceTree = "<group>"; };
-		85A550B9164D34520038BCB6 /* en-gb.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "en-gb.yml"; sourceTree = "<group>"; };
-		85A550BA164D34520038BCB6 /* en-ind.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "en-ind.yml"; sourceTree = "<group>"; };
-		85A550BB164D34520038BCB6 /* en-us.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "en-us.yml"; sourceTree = "<group>"; };
 		85A550BC164D34520038BCB6 /* en.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = en.yml; sourceTree = "<group>"; };
 		85A550BD164D34520038BCB6 /* fr.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fr.yml; sourceTree = "<group>"; };
 		85A550BE164D34520038BCB6 /* nl.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nl.yml; sourceTree = "<group>"; };
-		85A550BF164D34520038BCB6 /* no-nb.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "no-nb.yml"; sourceTree = "<group>"; };
 		85A550C0164D34520038BCB6 /* pl.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pl.yml; sourceTree = "<group>"; };
-		85A550C1164D34520038BCB6 /* pt-br.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pt-br.yml"; sourceTree = "<group>"; };
-		85A550C2164D34520038BCB6 /* vi.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vi.yml; sourceTree = "<group>"; };
 		85A550C3164D34520038BCB6 /* MBFaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFaker.h; sourceTree = "<group>"; };
 		85A550C4164D34520038BCB6 /* MBFaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFaker.m; sourceTree = "<group>"; };
 		85A550C5164D34520038BCB6 /* MBFakerAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFakerAddress.h; sourceTree = "<group>"; };
@@ -237,9 +217,9 @@
 				85A550D0164D34520038BCB6 /* MBFakerName.m */,
 				85A550D1164D34520038BCB6 /* MBFakerPhoneNumber.h */,
 				85A550D2164D34520038BCB6 /* MBFakerPhoneNumber.m */,
-				85A550D3164D34520038BCB6 /* yaml-0.1.3 */,
 				85A55140164D34520038BCB6 /* YAMLSerialization.h */,
 				85A55141164D34520038BCB6 /* YAMLSerialization.m */,
+				85A550D3164D34520038BCB6 /* yaml-0.1.3 */,
 			);
 			name = MBFaker;
 			path = ../MBFaker;
@@ -248,21 +228,11 @@
 		85A550B3164D34520038BCB6 /* Locales */ = {
 			isa = PBXGroup;
 			children = (
-				85A550B4164D34520038BCB6 /* de-ch.yml */,
 				85A550B5164D34520038BCB6 /* de.yml */,
-				85A550B6164D34520038BCB6 /* en-au.yml */,
-				85A550B7164D34520038BCB6 /* en-bork.yml */,
-				85A550B8164D34520038BCB6 /* en-ca.yml */,
-				85A550B9164D34520038BCB6 /* en-gb.yml */,
-				85A550BA164D34520038BCB6 /* en-ind.yml */,
-				85A550BB164D34520038BCB6 /* en-us.yml */,
 				85A550BC164D34520038BCB6 /* en.yml */,
 				85A550BD164D34520038BCB6 /* fr.yml */,
 				85A550BE164D34520038BCB6 /* nl.yml */,
-				85A550BF164D34520038BCB6 /* no-nb.yml */,
 				85A550C0164D34520038BCB6 /* pl.yml */,
-				85A550C1164D34520038BCB6 /* pt-br.yml */,
-				85A550C2164D34520038BCB6 /* vi.yml */,
 			);
 			path = Locales;
 			sourceTree = "<group>";
@@ -376,21 +346,11 @@
 				85A54D7A164D31A30038BCB6 /* Default@2x.png in Resources */,
 				85A54D7C164D31A30038BCB6 /* Default-568h@2x.png in Resources */,
 				85A54D82164D31A30038BCB6 /* MBViewController.xib in Resources */,
-				85A55142164D34520038BCB6 /* de-ch.yml in Resources */,
 				85A55143164D34520038BCB6 /* de.yml in Resources */,
-				85A55144164D34520038BCB6 /* en-au.yml in Resources */,
-				85A55145164D34520038BCB6 /* en-bork.yml in Resources */,
-				85A55146164D34520038BCB6 /* en-ca.yml in Resources */,
-				85A55147164D34520038BCB6 /* en-gb.yml in Resources */,
-				85A55148164D34520038BCB6 /* en-ind.yml in Resources */,
-				85A55149164D34520038BCB6 /* en-us.yml in Resources */,
 				85A5514A164D34520038BCB6 /* en.yml in Resources */,
 				85A5514B164D34520038BCB6 /* fr.yml in Resources */,
 				85A5514C164D34520038BCB6 /* nl.yml in Resources */,
-				85A5514D164D34520038BCB6 /* no-nb.yml in Resources */,
 				85A5514E164D34520038BCB6 /* pl.yml in Resources */,
-				85A5514F164D34520038BCB6 /* pt-br.yml in Resources */,
-				85A55150164D34520038BCB6 /* vi.yml in Resources */,
 				85A551AB164D34520038BCB6 /* LICENSE in Resources */,
 				85A551AC164D34520038BCB6 /* README in Resources */,
 				85A551AD164D34520038BCB6 /* api.Plo in Resources */,

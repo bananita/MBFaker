@@ -9,9 +9,9 @@ fr:
       city: ["Paris", "Marseille", "Lyon", "Toulouse", "Nice", "Nantes", "Strasbourg", "Montpellier", "Bordeaux", "Lille13", "Rennes", "Reims", "Le Havre", "Saint-Étienne", "Toulon", "Grenoble", "Dijon", "Angers", "Saint-Denis", "Villeurbanne", "Le Mans", "Aix-en-Provence", "Brest", "Nîmes", "Limoges", "Clermont-Ferrand", "Tours", "Amiens", "Metz", "Perpignan", "Besançon", "Orléans", "Boulogne-Billancourt", "Mulhouse", "Rouen", "Caen", "Nancy", "Saint-Denis", "Saint-Paul", "Montreuil", "Argenteuil", "Roubaix", "Dunkerque14", "Tourcoing", "Nanterre", "Avignon", "Créteil", "Poitiers", "Fort-de-France", "Courbevoie", "Versailles", "Vitry-sur-Seine", "Colombes", "Pau", "Aulnay-sous-Bois", "Asnières-sur-Seine", "Rueil-Malmaison", "Saint-Pierre", "Antibes", "Saint-Maur-des-Fossés", "Champigny-sur-Marne", "La Rochelle", "Aubervilliers", "Calais", "Cannes", "Le Tampon", "Béziers", "Colmar", "Bourges", "Drancy", "Mérignac", "Saint-Nazaire", "Valence", "Ajaccio", "Issy-les-Moulineaux", "Villeneuve-d'Ascq", "Levallois-Perret", "Noisy-le-Grand", "Quimper", "La Seyne-sur-Mer", "Antony", "Troyes", "Neuilly-sur-Seine", "Sarcelles", "Les Abymes", "Vénissieux", "Clichy", "Lorient", "Pessac", "Ivry-sur-Seine", "Cergy", "Cayenne", "Niort", "Chambéry", "Montauban", "Saint-Quentin", "Villejuif", "Hyères", "Beauvais", "Cholet"]
       name: ["de l'Abbaye", "Adolphe Mille", "d'Alésia", "d'Argenteuil", "d'Assas", "du Bac, Paris", "La Boétie", "Bonaparte", "de la Bûcherie", "de Caumartin", "Charlemagne", "du Chat-qui-Pêche", "de la Chaussée-d'Antin", "du Dahomey", "Dauphine", "Delesseux", "du Faubourg Saint-Honoré", "du Faubourg-Saint-Denis", "de la Ferronnerie", "des Francs-Bourgeois", "des Grands Augustins", "de la Harpe", "du Havre", "de la Huchette", "Joubert", "Laffitte", "Lepic", "des Lombards", "Marcadet", "Molière", "Monsieur-le-Prince", "de Montmorency", "Montorgueil", "Mouffetard", "de Nesle", "Oberkampf", "de l'Odéon", "d'Orsel", "de la Paix", "des Panoramas", "Pastourelle", "Pierre Charron", "de la Pompe", "de Presbourg", "de Provence", "de Richelieu", "de Rivoli", "des Rosiers", "Royale", "d'Abbeville", "Saint-Honoré", "Saint-Bernard", "Saint-Denis", "Saint-Dominique", "Saint-Jacques", "Saint-Séverin", "des Saussaies", "de Seine", "de Solférino", "Du Sommerard", "de Tilsitt", "Vaneau", "de Vaugirard", "de la Victoire", "Zadkine"]
       street_name:
-        - "#{street_prefix} #{name}"
+        - "#{address.street_prefix} #{address.name}"
       street_address:
-        - "#{building_number} #{street_name}"
+        - "#{address.building_number} #{address.street_name}"
       default_country: [France]
 
     company:
@@ -27,7 +27,7 @@ fr:
         - ["clicks-and-mortar", "value-added", "vertical", "proactive", "robust", "revolutionary", "scalable", "leading-edge", "innovative", "intuitive", "strategic", "e-business", "mission-critical", "sticky", "one-to-one", "24/7", "end-to-end", "global", "B2B", "B2C", "granular", "frictionless", "virtual", "viral", "dynamic", "24/365", "best-of-breed", "killer", "magnetic", "bleeding-edge", "web-enabled", "interactive", "dot-com", "sexy", "back-end", "real-time", "efficient", "front-end", "distributed", "seamless", "extensible", "turn-key", "world-class", "open-source", "cross-platform", "cross-media", "synergistic", "bricks-and-clicks", "out-of-the-box", "enterprise", "integrated", "impactful", "wireless", "transparent", "next-generation", "cutting-edge", "user-centric", "visionary", "customized", "ubiquitous", "plug-and-play", "collaborative", "compelling", "holistic", "rich"]
         - ["synergies", "web-readiness", "paradigms", "markets", "partnerships", "infrastructures", "platforms", "initiatives", "channels", "eyeballs", "communities", "ROI", "solutions", "e-tailers", "e-services", "action-items", "portals", "niches", "technologies", "content", "vortals", "supply-chains", "convergence", "relationships", "architectures", "interfaces", "e-markets", "e-commerce", "systems", "bandwidth", "infomediaries", "models", "mindshare", "deliverables", "users", "schemas", "networks", "applications", "metrics", "e-business", "functionalities", "experiences", "web services", "methodologies"]
       name:
-        - "#{Name.last_name} #{suffix}"
+        - "#{Name.last_name} #{address.suffix}"
         - "#{Name.last_name} et #{Name.last_name}"
           
     internet:
@@ -45,9 +45,9 @@ fr:
       title:
         job: [Superviseur, Executif, Manager, Ingenieur, Specialiste, Directeur, Coordinateur, Administrateur, Architecte, Analyste, Designer, Technicien, Developpeur, Producteur, Consultant, Assistant, Agent, Stagiaire]
       name:
-        - "#{prefix} #{first_name} #{last_name}"
-        - "#{first_name} #{last_name}"
-        - "#{last_name} #{name_name}"
+        - "#{name.prefix} #{name.first_name} #{name.last_name}"
+        - "#{name.first_name} #{name.last_name}"
+        - "#{name.last_name} #{name.name}"
 
     phone_number:
       formats: ['01########', '02########', '03########', '04########', '05########', '06########', '07########', '+33 1########', '+33 2########', '+33 3########', '+33 4########', '+33 5########', '+33 6########', '+33 7########']

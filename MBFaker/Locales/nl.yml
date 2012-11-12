@@ -4,10 +4,10 @@ nl:
       city_prefix: [Noord, Oost, West, Zuid, Nieuw, Oud]
       city_suffix: ["dam", "berg", " aan de Rijn", " aan de IJssel", "swaerd", "endrecht", "recht", "ambacht", "enmaes", "wijk", "sland", "stroom", "sluus", "dijk", "dorp", "burg", "veld", "sluis", "koop", "lek", "hout", "geest", "kerk", "woude", "hoven", "hoten", "ingen", "plas", "meer"]
       city:
-        - "#{Name.first_name}#{city_suffix}"
-        - "#{Name.last_name}#{city_suffix}"
-        - "#{city_prefix} #{Name.first_name}#{city_suffix}"
-        - "#{city_prefix} #{Name.last_name}#{city_suffix}"
+        - "#{Name.first_name}#{address.city_suffix}"
+        - "#{Name.last_name}#{address.city_suffix}"
+        - "#{address.city_prefix} #{Name.first_name}#{address.city_suffix}"
+        - "#{address.city_prefix} #{Name.last_name}#{address.city_suffix}"
       country: [ "Afghanistan", "Akrotiri", "Albanië", "Algerije", "Amerikaanse Maagdeneilanden", "Amerikaans-Samoa", "Andorra", "Angola", "Anguilla",
                  "Antarctica", "Antigua en Barbuda", "Arctic Ocean", "Argentinië", "Armenië", "Aruba", "Ashmore and Cartier Islands", "Atlantic Ocean", 
                  "Australië", "Azerbeidzjan", "Bahama's", "Bahrein", "Bangladesh", "Barbados", "Belarus", "België", "Belize", "Benin", "Bermuda", "Bhutan", 
@@ -39,11 +39,11 @@ nl:
       street_suffix: ["straat", "laan", "weg", "plantsoen", "park"]
       secondary_address: ["1 hoog", "2 hoog", "3 hoog"]
       street_name:
-        - "#{Name.first_name}#{street_suffix}"
-        - "#{Name.last_name}#{street_suffix}"
+        - "#{Name.first_name}#{address.street_suffix}"
+        - "#{Name.last_name}#{address.street_suffix}"
 
       street_address:
-        - "#{street_name} #{building_number}"
+        - "#{address.street_name} #{address.building_number}"
       postcode: ["#### ??"]
       state: ["Noord-Holland", "Zuid-Holland", "Utrecht", "Zeeland", "Overijssel", "Gelderland", "Drenthe", "Friesland", "Groningen", "Noord-Braband", "Limburg"]
       default_country: [Nederland]
@@ -66,12 +66,12 @@ nl:
       prefix: [Dhr., Mevr. Dr., Bsc, Msc, Prof.]
       suffix: [Jr., Sr., I, II, III, IV, V]
       name:
-        - "#{prefix} #{first_name} #{last_name}"
-        - "#{first_name} #{last_name} #{suffix}"
-        - "#{first_name} #{last_name}"
-        - "#{first_name} #{last_name}"
-        - "#{first_name} #{tussenvoegsel} #{last_name}"
-        - "#{first_name} #{tussenvoegsel} #{last_name}"
+        - "#{name.prefix} #{name.first_name} #{name.last_name}"
+        - "#{name.first_name} #{name.last_name} #{name.suffix}"
+        - "#{name.first_name} #{name.last_name}"
+        - "#{name.first_name} #{name.last_name}"
+        - "#{name.first_name} #{name.tussenvoegsel} #{name.last_name}"
+        - "#{name.first_name} #{name.tussenvoegsel} #{name.last_name}"
 
     phone_number:
       formats: ["(####) ######", "##########", "06########", "06 #### ####"]
