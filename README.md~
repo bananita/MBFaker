@@ -1,6 +1,6 @@
 MBFaker
 =====
-This library is a port of Ruby's [Faker](https://github.com/stympy/faker) library that generates fake data.  
+This library is a port of Ruby's Faker library that generates fake data.  
 
 You can use it for taking real-looking test data, screenshots and populate
 your database during development.
