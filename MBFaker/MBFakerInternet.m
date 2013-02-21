@@ -24,7 +24,7 @@
 }
 
 + (NSString*)userName {
-    NSMutableArray* components = [[[NSMutableArray alloc] init] autorelease];
+    NSMutableArray* components = [[NSMutableArray alloc] init];
     
     for (int i=0; i<1+arc4random()%2;i++) {
         if (i == 0)
@@ -53,7 +53,7 @@
 }
 
 + (NSString*)ipV6Address {
-    NSMutableArray* components = [[[NSMutableArray alloc] initWithCapacity:8] autorelease];
+    NSMutableArray* components = [[NSMutableArray alloc] initWithCapacity:8];
     
     for (int i=0; i<8; i++)
          [components addObject:[NSString stringWithFormat:@"%X", arc4random()%65535]];

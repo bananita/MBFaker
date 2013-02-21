@@ -16,7 +16,7 @@
 }
 
 + (NSString*)words:(NSInteger)numberOfWords {
-    NSMutableArray *words = [[[NSMutableArray alloc] initWithCapacity:numberOfWords] autorelease];
+    NSMutableArray *words = [[NSMutableArray alloc] initWithCapacity:numberOfWords];
     
     for (int i=0; i<numberOfWords; i++)
         [words addObject:[[MBFaker sharedFaker] fetchStringWithKey:@"lorem.words"]];
@@ -26,7 +26,7 @@
 
 
 + (NSString*)characters:(NSInteger)numberOfCharacters {
-    NSMutableArray *characters = [[[NSMutableArray alloc] initWithCapacity:numberOfCharacters] autorelease];
+    NSMutableArray *characters = [[NSMutableArray alloc] initWithCapacity:numberOfCharacters];
     
     for (int i=0; i<numberOfCharacters; i++)
         [characters addObject:[NSString stringWithFormat:@"%c", arc4random()%(122-97) + 97]];
@@ -35,7 +35,7 @@
 }
 
 + (NSString*)numbers:(NSInteger)numberOfNumbers {
-    NSMutableArray *numbers = [[[NSMutableArray alloc] initWithCapacity:numberOfNumbers] autorelease];
+    NSMutableArray *numbers = [[NSMutableArray alloc] initWithCapacity:numberOfNumbers];
     
     for (int i=0; i<numberOfNumbers; i++)
         [numbers addObject:[NSString stringWithFormat:@"%i", arc4random()%10]];
@@ -48,7 +48,7 @@
 }
 
 + (NSString*)sentenceWithNumberOfWords:(NSInteger)numberOfWords {
-    NSMutableArray* words = [[[NSMutableArray alloc] initWithCapacity:numberOfWords] autorelease];
+    NSMutableArray* words = [[NSMutableArray alloc] initWithCapacity:numberOfWords];
     
     [words addObject:[[MBFakerLorem word] capitalizedString]];
     
@@ -62,7 +62,7 @@
 }
 
 + (NSString*)sentences:(NSInteger)numberOfSentences {
-    NSMutableArray *sentences = [[[NSMutableArray alloc] initWithCapacity:numberOfSentences] autorelease];
+    NSMutableArray *sentences = [[NSMutableArray alloc] initWithCapacity:numberOfSentences];
     
     for (int i=0; i<numberOfSentences; i++)
          [sentences addObject:[MBFakerLorem sentence]];
@@ -83,7 +83,7 @@
 }
 
 + (NSString*)paragraphs:(NSInteger)numberOfParagraphs {
-    NSMutableArray *paragraphs = [[[NSMutableArray alloc] initWithCapacity:numberOfParagraphs] autorelease];
+    NSMutableArray *paragraphs = [[NSMutableArray alloc] initWithCapacity:numberOfParagraphs];
     
     for (int i=0; i<numberOfParagraphs; i++)
          [paragraphs addObject:[MBFakerLorem paragraph]];

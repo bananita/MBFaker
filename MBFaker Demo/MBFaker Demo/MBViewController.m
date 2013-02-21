@@ -31,13 +31,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)dealloc {
-    [_tableView release];
-    [_buttonAdd release];
-    [people release];
-    
-    [super dealloc];
-}
 
 - (void)viewDidUnload {
     [self setTableView:nil];
@@ -58,7 +51,7 @@
     MBTableCell* tableCell = [tableView dequeueReusableCellWithIdentifier:@"tableCell"];
     
     if (!tableCell)
-        tableCell = [[[MBTableCell tableCell] retain] autorelease];
+        tableCell = [MBTableCell tableCell];
     
     [tableCell setPerson:[people objectAtIndex:indexPath.row]];
     

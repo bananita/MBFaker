@@ -12,7 +12,7 @@
 @implementation MBPerson
 
 + (MBPerson*)personWithFakeData {
-    MBPerson* person = [[[MBPerson alloc] init] autorelease];
+    MBPerson* person = [[MBPerson alloc] init];
     
     person.name = [MBFakerName name];
     person.email = [MBFakerInternet freeEmail];

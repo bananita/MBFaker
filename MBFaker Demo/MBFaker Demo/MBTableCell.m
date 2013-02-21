@@ -33,13 +33,4 @@
     // Configure the view for the selected state
 }
 
-- (void)dealloc {
-    [_labelName release];
-    [_labelEmail release];
-    [_labelAddress release];
-    [_labelZipCode release];
-    [_labelCity release];
-    [_textViewLorem release];
-    [super dealloc];
-}
 @end

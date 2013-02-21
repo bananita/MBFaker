@@ -10,8 +10,8 @@
 
 @interface MBViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (retain, nonatomic) IBOutlet UITableView *tableView;
-@property (retain, nonatomic) IBOutlet UIBarButtonItem *buttonAdd;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *buttonAdd;
 
 - (IBAction)buttonAdd:(id)sender;
 

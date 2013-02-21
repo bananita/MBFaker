@@ -44,13 +44,8 @@
 }
 
 - (void)fetchTranslations {
-    translations = [[MBFakerHelper translations] retain];
+    translations = [MBFakerHelper translations];
 }
 
-- (void)dealloc {
-    [translations release];
-    
-    [super dealloc];
-}
 
 @end

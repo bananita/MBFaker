@@ -15,11 +15,11 @@
 
 - (void)setPerson:(MBPerson*)person;
 
-@property (retain, nonatomic) IBOutlet UILabel *labelName;
-@property (retain, nonatomic) IBOutlet UILabel *labelEmail;
-@property (retain, nonatomic) IBOutlet UILabel *labelAddress;
-@property (retain, nonatomic) IBOutlet UILabel *labelZipCode;
-@property (retain, nonatomic) IBOutlet UILabel *labelCity;
-@property (retain, nonatomic) IBOutlet UITextView *textViewLorem;
+@property (strong, nonatomic) IBOutlet UILabel *labelName;
+@property (strong, nonatomic) IBOutlet UILabel *labelEmail;
+@property (strong, nonatomic) IBOutlet UILabel *labelAddress;
+@property (strong, nonatomic) IBOutlet UILabel *labelZipCode;
+@property (strong, nonatomic) IBOutlet UILabel *labelCity;
+@property (strong, nonatomic) IBOutlet UITextView *textViewLorem;
 
 @end

@@ -13,7 +13,7 @@
 @implementation MBFakerHelper
 
 + (NSDictionary*)translations {
-    NSMutableDictionary* translationsDictionary = [[[NSMutableDictionary alloc] init] autorelease];
+    NSMutableDictionary* translationsDictionary = [[NSMutableDictionary alloc] init];
     
     NSArray* translationPaths = [[NSBundle mainBundle] pathsForResourcesOfType:@"yml" inDirectory:@""];
     
@@ -87,7 +87,7 @@
     
     NSArray* components = [dataTemplate componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"{#}"]];
         
-    NSMutableArray* parsedTemplate = [[[NSMutableArray alloc] init] autorelease];
+    NSMutableArray* parsedTemplate = [[NSMutableArray alloc] init];
     
     for (NSString* component in components)
         if ([component length] > 0)

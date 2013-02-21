@@ -26,15 +26,14 @@ NSString *const YAMLErrorDomain = @"com.github.mirek.yaml";
 #pragma mark -
 
 static int YAMLSerializationDataHandler(void *data, unsigned char *buffer, size_t size) {
-	NSMutableString *string = (NSMutableString*)data;
+	NSMutableString *string = (__bridge NSMutableString*)data;
 	NSString *buf = [[NSString alloc] initWithBytes:buffer length:size encoding:NSUTF8StringEncoding]; 
 	[string appendString:buf];
-	[buf release];
 	return YES;
 }
 
 static int YAMLSerializationWriteHandler(void *data, unsigned char *buffer, size_t size) {
-	if ([(NSOutputStream *)data write:buffer maxLength:size] <= 0) {
+	if ([(__bridge NSOutputStream *)data write:buffer maxLength:size] <= 0) {
 		return NO;
 	} else {
 		return YES;
@@ -120,7 +119,7 @@ static yaml_document_t* YAMLSerializationToDocument(id yaml, YAMLWriteOptions op
 
 
 static int YAMLSerializationReadHandler(void *data, unsigned char *buffer, size_t size, size_t *size_read) {
-  NSInteger outcome = [(NSInputStream *)data read: (uint8_t *)buffer maxLength: size];
+  NSInteger outcome = [(__bridge NSInputStream *)data read: (uint8_t *)buffer maxLength: size];
   if (outcome < 0) {
     *size_read = 0;
     return NO;
@@ -134,7 +133,7 @@ static int YAMLSerializationReadHandler(void *data, unsigned char *buffer, size_
 static id YAMLSerializationWithDocument(yaml_document_t *document, YAMLReadOptions opt, NSError **error) {
 
   id root = nil;
-  id *objects = nil;
+    NSMutableArray* objects = [[NSMutableArray alloc] init];
 
   // Mutability options
   Class arrayClass = [NSArray class];
@@ -161,7 +160,7 @@ static id YAMLSerializationWithDocument(yaml_document_t *document, YAMLReadOptio
 
   int i = 0;
 
-  objects = (id *)malloc(sizeof(id) * (document->nodes.top - document->nodes.start));
+  
   if (!objects) {
     YAML_SET_ERROR(kYAMLErrorCodeOutOfMemory,  @"Couldn't allocate memory", @"Please try to free memory and retry");
 	  return nil;
@@ -205,17 +204,11 @@ static id YAMLSerializationWithDocument(yaml_document_t *document, YAMLReadOptio
     }
   }
 	
-  // Retain the root object
-  if (root)
-    [root retain];
+
   
   // Release all objects. The root object and all referenced (in containers) objects
   // will have retain count > 0
-  for (node = document->nodes.start, i = 0; node < document->nodes.top; node++, i++)
-    [objects[i] release];
 
-  if (objects)
-    free(objects);
   
   return root;
 }
@@ -243,7 +236,7 @@ static id YAMLSerializationWithDocument(yaml_document_t *document, YAMLReadOptio
 	  return nil;
   }
   
-  yaml_parser_set_input(&parser, YAMLSerializationReadHandler, (void *)stream);
+  yaml_parser_set_input(&parser, YAMLSerializationReadHandler, (__bridge void *)stream);
   
   while (!done) {
 
@@ -260,7 +253,6 @@ static id YAMLSerializationWithDocument(yaml_document_t *document, YAMLReadOptio
 		  yaml_document_delete(&document);
       } else {
         [documents addObject: documentObject];
-        [documentObject release];
       }
     }
     
@@ -298,7 +290,7 @@ static id YAMLSerializationWithDocument(yaml_document_t *document, YAMLReadOptio
 	}
 	
 	yaml_emitter_set_encoding(&emitter, YAML_UTF8_ENCODING);
-	yaml_emitter_set_output(&emitter, YAMLSerializationWriteHandler, (void *)stream);
+	yaml_emitter_set_output(&emitter, YAMLSerializationWriteHandler, (__bridge void *)stream);
 	
 	// Open output stream
 	[stream open];
@@ -345,7 +337,7 @@ static id YAMLSerializationWithDocument(yaml_document_t *document, YAMLReadOptio
 	}
 
 	yaml_emitter_set_encoding(&emitter, YAML_UTF8_ENCODING);
-	yaml_emitter_set_output(&emitter, YAMLSerializationDataHandler, (void *)data);
+	yaml_emitter_set_output(&emitter, YAMLSerializationDataHandler, (__bridge void *)data);
 	
 	if (kYAMLWriteOptionMultipleDocuments & opt) {
 		//yaml is an array of documents
