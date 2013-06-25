@@ -128,7 +128,7 @@
         if ([numberTemplate characterAtIndex:i] == '#')
             numberString = [numberString stringByAppendingFormat:@"%d", arc4random()%10];
         else
-            numberString = [numberString stringByAppendingFormat:@"%c", [numberTemplate characterAtIndex:i]];
+            numberString = [numberString stringByAppendingString:[numberTemplate substringWithRange:NSMakeRange(i, 1)]];
     }
     
     return numberString;
