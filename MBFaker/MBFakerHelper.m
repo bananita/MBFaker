@@ -83,7 +83,9 @@
         
         if (templateRange.location == NSNotFound)
             return [MBFakerHelper numberWithTemplate:dataTemplate fromTranslationsDictionary:translations];
-    }
+    } else {
+		return dataTemplate;
+	}
     
     NSArray* components = [dataTemplate componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"{#}"]];
         
@@ -92,33 +94,27 @@
     for (NSString* component in components)
         if ([component length] > 0)
             [parsedTemplate addObject:component];
-    
-    if ([parsedTemplate count] == 1)
-        return [parsedTemplate objectAtIndex:0];
-    else {
-        NSString* fetchedString = @"";
-        
-        for (NSString* parsedElement in parsedTemplate) {
-            if ([parsedElement compare:@" "] == 0)
-                fetchedString = [fetchedString stringByAppendingString:@" "];
-            else {
-                NSString* stringToAppend = [MBFakerHelper fetchRandomElementWithKey:parsedElement withLanguage:language fromTranslationsDictionary:translations];
-                
-                if (stringToAppend)
-                    fetchedString = [fetchedString stringByAppendingString:stringToAppend];
-                else
-                    fetchedString = [fetchedString stringByAppendingString:parsedElement];
-            }
-                
-        }
-        
-        if ([fetchedString compare:@""] == 0)
-            return nil;
-        else
-            return fetchedString;
-    }
-    
-    return nil;
+	
+	NSString* fetchedString = @"";
+	
+	for (NSString* parsedElement in parsedTemplate) {
+		if ([parsedElement compare:@" "] == 0)
+			fetchedString = [fetchedString stringByAppendingString:@" "];
+		else {
+			NSString* stringToAppend = [MBFakerHelper fetchRandomElementWithKey:parsedElement withLanguage:language fromTranslationsDictionary:translations];
+			
+			if (stringToAppend)
+				fetchedString = [fetchedString stringByAppendingString:stringToAppend];
+			else
+				fetchedString = [fetchedString stringByAppendingString:parsedElement];
+		}
+		
+	}
+	
+	if ([fetchedString compare:@""] == 0)
+		return nil;
+	else
+		return fetchedString;
 }
 
 + (NSString*)numberWithTemplate:(NSString *)numberTemplate fromTranslationsDictionary:(NSDictionary*)translations {
