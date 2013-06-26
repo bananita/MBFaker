@@ -53,6 +53,7 @@
 		85A551C9164D36F00038BCB6 /* MBTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A551C8164D36F00038BCB6 /* MBTableCell.m */; };
 		85A551CB164D370C0038BCB6 /* MBTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85A551CA164D370C0038BCB6 /* MBTableCell.xib */; };
 		85A551CE164D3D190038BCB6 /* MBPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A551CD164D3D190038BCB6 /* MBPerson.m */; };
+		8FE4DEC0177AF382005DF1A1 /* ru.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8FE4DEBF177AF382005DF1A1 /* ru.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +122,7 @@
 		85A551CA164D370C0038BCB6 /* MBTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MBTableCell.xib; sourceTree = "<group>"; };
 		85A551CC164D3D190038BCB6 /* MBPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPerson.h; sourceTree = "<group>"; };
 		85A551CD164D3D190038BCB6 /* MBPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPerson.m; sourceTree = "<group>"; };
+		8FE4DEBF177AF382005DF1A1 /* ru.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ru.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 		85A550B3164D34520038BCB6 /* Locales */ = {
 			isa = PBXGroup;
 			children = (
+				8FE4DEBF177AF382005DF1A1 /* ru.yml */,
 				85A550B5164D34520038BCB6 /* de.yml */,
 				85A550BC164D34520038BCB6 /* en.yml */,
 				85A550BD164D34520038BCB6 /* fr.yml */,
@@ -362,6 +365,7 @@
 				85A551B3164D34520038BCB6 /* scanner.Plo in Resources */,
 				85A551B4164D34520038BCB6 /* writer.Plo in Resources */,
 				85A551CB164D370C0038BCB6 /* MBTableCell.xib in Resources */,
+				8FE4DEC0177AF382005DF1A1 /* ru.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
