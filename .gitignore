@@ -1,22 +1,15 @@
-# Exclude the build directory
-build/*
- 
-# Exclude temp nibs and swap files
-*~.nib
-*.swp
- 
-# Exclude OS X folder attributes
+# OS X temporary files 
 .DS_Store
+*.swp
+*.lock
+profile
  
-# Exclude user-specific XCode 3 and 4 files
-*.mode1
-*.mode1v3
-*.mode2v3
-*.perspective
-*.perspectivev3
-*.pbxuser
-*.xcworkspace
+# XCode user data
 xcuserdata
-
-#emacs
-~*
+ 
+# Cocoapods
+Pods/
+Podfile.lock
+ 
+# emacs temporary
+*~
