@@ -10,12 +10,12 @@ cs:
       state_abbr: [PR, ST, JI, PL, KV, ÚS, LI, KR, PA, VY, JM, OL, MS, ZL]
       city_name: [Cheb, Sokolov, Karlovy Vary, Chomutov, Most, Teplice, Ústí nad Labem, Děčín, Tachov, Domažlice, Klatovy, Plzeň, Rokycany, Rakovník, Louny, Kladno, Beroun, Příbram, Strakonice, Pardubice, Český Krumlov, Benešov, Tábor, České Budějovice, Písek, Litoměřice, Česká Lípa, Mělník, Liberec, Jablonec, Semily, Jičín, Trutnov, Náchod, Rychnov, Mladá Boleslav, Hradec Králové, Nymburk , Kolín, Kutná Hora, Pardubice, Ústí nad Orlicí, Benešov, Havlíčkův Brod, Pelhřimov, Jihlava, Jindřichův Hradec, Jeseník, Bruntál, Opava, Šumperk, Svitavy, Olomouc, Žďár nad Sázavou, Blansko, Brno, Znojmo, Prostějov, Přerov, Kroměříž, Hodonín, Vsetín, Zlín, Uherské Hradiště, Frýdek Místek, Nový Jičín, Ostrava, Chrudim, Vyškov, Karviná, Břeclav, Praha]
       city:
-          - "#{address.city_name}"
-        street_name:
-          - "#{address.street_prefix} #{Name.last_name}"
-        street_address:
-          - "#{address.street_name} #{address.building_number}"
-        default_country: [Česká Republika]
+        - "#{address.city_name}"
+      street_name:
+        - "#{address.street_prefix} #{Name.last_name}"
+      street_address:
+        - "#{address.street_name} #{address.building_number}"
+      default_country: [Česká Republika]
 
     company:
       suffix: [s.r.o., a.s., Group]
