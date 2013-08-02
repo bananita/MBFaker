@@ -9,6 +9,12 @@ To parse language files it uses [YAML.framework](https://github.com/mirek/YAML.f
 
 ![iOS Screenshot](https://raw.github.com/bananita/MBFaker/master/Screenshots/ios.png)
 
+Installation
+------------
+Insert line below into your Podfile:
+
+    pod 'MBFaker'
+
 Languages
 ---------
 It works with original language files in yaml with small modifications.
@@ -21,7 +27,7 @@ Language name is just name of file with it.
 
 Usage
 -----
-    #import "MBFaker.h"
+    #import <MBFaker/MBFaker.h>
     
         ...
             
