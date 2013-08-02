@@ -177,10 +177,10 @@
 				85A54D80164D31A30038BCB6 /* MBViewController.xib */,
 				85A551C7164D36F00038BCB6 /* MBTableCell.h */,
 				85A551C8164D36F00038BCB6 /* MBTableCell.m */,
-				85A54D6C164D31A30038BCB6 /* Supporting Files */,
 				85A551CA164D370C0038BCB6 /* MBTableCell.xib */,
 				85A551CC164D3D190038BCB6 /* MBPerson.h */,
 				85A551CD164D3D190038BCB6 /* MBPerson.m */,
+				85A54D6C164D31A30038BCB6 /* Supporting Files */,
 			);
 			path = "MBFaker Demo";
 			sourceTree = "<group>";
