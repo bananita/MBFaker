@@ -20,7 +20,7 @@
 }
 
 + (NSString*)safeEmail {
-
+    return [self freeEmail];
 }
 
 + (NSString*)userName {
@@ -37,11 +37,11 @@
 }
 
 + (NSString*)domainName {
-    
+    return @"";
 }
 
 + (NSString*)domainWord {
-    
+    return @"";
 }
 
 + (NSString*)domainSuffix {
