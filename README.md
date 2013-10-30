@@ -27,12 +27,14 @@ Language name is just name of file with it.
 
 Usage
 -----
-    #import <MBFaker/MBFaker.h>
-    
-        ...
-            
-    NSString* name  = [MBFakerName name];
-    NSString* email = [MBFakerInternet freeEmail];
+```objc
+#import <MBFaker/MBFaker.h>
+
+// ...
+
+NSString* name  = [MBFakerName name];
+NSString* email = [MBFakerInternet freeEmail];
+```
     
 Contributing
 ------------
