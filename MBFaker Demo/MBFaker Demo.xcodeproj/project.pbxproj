@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A03C0AA1AAFB2C80028B8DB /* MBFakerDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A03C0A91AAFB2C80028B8DB /* MBFakerDate.m */; };
+		6A03C0AD1AAFBD630028B8DB /* MBFakerTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A03C0AC1AAFBD630028B8DB /* MBFakerTime.m */; };
 		85A54D66164D31A30038BCB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A54D65164D31A30038BCB6 /* UIKit.framework */; };
 		85A54D68164D31A30038BCB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A54D67164D31A30038BCB6 /* Foundation.framework */; };
 		85A54D6A164D31A30038BCB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A54D69164D31A30038BCB6 /* CoreGraphics.framework */; };
@@ -57,6 +59,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A03C0A81AAFB2C80028B8DB /* MBFakerDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFakerDate.h; sourceTree = "<group>"; };
+		6A03C0A91AAFB2C80028B8DB /* MBFakerDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFakerDate.m; sourceTree = "<group>"; };
+		6A03C0AB1AAFBD630028B8DB /* MBFakerTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFakerTime.h; sourceTree = "<group>"; };
+		6A03C0AC1AAFBD630028B8DB /* MBFakerTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFakerTime.m; sourceTree = "<group>"; };
 		85A54D61164D31A30038BCB6 /* MBFaker Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MBFaker Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A54D65164D31A30038BCB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		85A54D67164D31A30038BCB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -209,6 +215,10 @@
 				85A550C6164D34520038BCB6 /* MBFakerAddress.m */,
 				85A550C7164D34520038BCB6 /* MBFakerCompany.h */,
 				85A550C8164D34520038BCB6 /* MBFakerCompany.m */,
+				6A03C0A81AAFB2C80028B8DB /* MBFakerDate.h */,
+				6A03C0A91AAFB2C80028B8DB /* MBFakerDate.m */,
+				6A03C0AB1AAFBD630028B8DB /* MBFakerTime.h */,
+				6A03C0AC1AAFBD630028B8DB /* MBFakerTime.m */,
 				85A550C9164D34520038BCB6 /* MBFakerHelper.h */,
 				85A550CA164D34520038BCB6 /* MBFakerHelper.m */,
 				85A550CB164D34520038BCB6 /* MBFakerInternet.h */,
@@ -395,9 +405,11 @@
 				85A551BA164D34520038BCB6 /* reader.c in Sources */,
 				85A551BB164D34520038BCB6 /* scanner.c in Sources */,
 				85A551BC164D34520038BCB6 /* writer.c in Sources */,
+				6A03C0AA1AAFB2C80028B8DB /* MBFakerDate.m in Sources */,
 				85A551BD164D34520038BCB6 /* YAMLSerialization.m in Sources */,
 				85A551C9164D36F00038BCB6 /* MBTableCell.m in Sources */,
 				85A551CE164D3D190038BCB6 /* MBPerson.m in Sources */,
+				6A03C0AD1AAFBD630028B8DB /* MBFakerTime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

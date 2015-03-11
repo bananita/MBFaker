@@ -14,6 +14,8 @@
 #import "MBFakerPhoneNumber.h"
 #import "MBFakerInternet.h"
 #import "MBFakerAddress.h"
+#import "MBFakerDate.h"
+#import "MBFakerTime.h"
 
 @interface MBFaker : NSObject
 
