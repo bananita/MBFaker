@@ -12,7 +12,7 @@
 
 @interface MBFakerDate()
 
-+ (NSDate*) dateAtMidnight:(NSDate*) inputDate;
++ (NSDateComponents*) componentForDate:(NSDate*) date;
 + (NSDate*) dateAtBeginningOfYear:(NSDate*) inputDate;
 
 @end
@@ -20,61 +20,60 @@
 @implementation MBFakerDate
 
 // Public methods
-+ (NSDate*)between:(NSDate*)from to:(NSDate*)to {
-    NSDate *fromMidnight = [self dateAtMidnight:from];
++ (NSDateComponents*)between:(NSDate*)from to:(NSDate*)to {
     
     NSUInteger days = abs((to.timeIntervalSince1970 - from.timeIntervalSince1970) / NUM_SECONDS_PER_DAY);
 
     NSUInteger randomNumOfDays = arc4random() % days;
     
-    NSDate *randomDate = [fromMidnight dateByAddingTimeInterval:randomNumOfDays * NUM_SECONDS_PER_DAY];
+    NSDate *randomDate = [from dateByAddingTimeInterval:randomNumOfDays * NUM_SECONDS_PER_DAY];
     
-    return randomDate;
+    return [self componentForDate:randomDate];
 }
 
-+ (NSDate*)forward {
++ (NSDateComponents*)forward {
     return [self forward:365];
 }
 
-+ (NSDate*)forward:(NSUInteger)days {
++ (NSDateComponents*)forward:(NSUInteger)days {
     
-    NSDate *today = [self dateAtMidnight:[NSDate date]];
+    NSDate *today = [NSDate date];
     
     if (days == 0) {
-        return today;
+        return [self componentForDate:today];
     }
     
     NSInteger randomNumOfDays = arc4random() % days;
     
     NSDate *future = [today dateByAddingTimeInterval:randomNumOfDays * NUM_SECONDS_PER_DAY];
-    
-    return future;
+
+    return [self componentForDate:future];
 }
 
-+ (NSDate*)backward {
++ (NSDateComponents*)backward {
     return [self backward:365];
 }
 
-+ (NSDate*)backward:(NSUInteger)days {
++ (NSDateComponents*)backward:(NSUInteger)days {
     
-    NSDate *today = [self dateAtMidnight:[NSDate date]];
+    NSDate *today = [NSDate date];
     
     if (days == 0) {
-        return today;
+        return [self componentForDate:today];;
     }
     
     NSInteger randomNumOfDays = -(arc4random() % days);
     
     NSDate *past = [today dateByAddingTimeInterval:randomNumOfDays * NUM_SECONDS_PER_DAY];
     
-    return past;
+    return [self componentForDate:past];
 }
 
-+ (NSDate*)birthday {
++ (NSDateComponents*)birthday {
     return [self birthdayFromAge:18 toAge:65];
 }
 
-+ (NSDate*)birthdayFromAge:(NSUInteger)fromAge toAge:(NSUInteger)toAge {
++ (NSDateComponents*)birthdayFromAge:(NSUInteger)fromAge toAge:(NSUInteger)toAge {
     
     NSUInteger randomNumOfYears = abs(arc4random() % (toAge - fromAge));
     
@@ -86,24 +85,28 @@
     
     NSDate *birthDay = [beginningOfYear dateByAddingTimeInterval:totalTimeDifference ];
     
-    return [self dateAtMidnight:birthDay];
+    return [self componentForDate:birthDay];
 }
 
-+ (NSString *) dateString:(NSDate*) date {
++ (NSString *) dateString:(NSDateComponents*) component {
+    NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
+    NSDate* date = [calendar dateFromComponents:component];
+    
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.timeStyle = kCFDateFormatterMediumStyle;
+    dateFormatter.timeStyle = kCFDateFormatterNoStyle;
     dateFormatter.dateStyle = kCFDateFormatterMediumStyle;
     
     return [dateFormatter stringFromDate:date];
 }
 
 // Private methods
-+ (NSDate*) dateAtMidnight:(NSDate*) inputDate {
++ (NSDateComponents*) componentForDate:(NSDate*) date {
     NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
     NSUInteger preservedComponents = (NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit);
-    return [calendar dateFromComponents:[calendar components:preservedComponents fromDate:inputDate]];
+    NSDateComponents *component = [calendar components:preservedComponents fromDate:date];
+    
+    return component;
 }
-
 
 + (NSDate*) dateAtBeginningOfYear:(NSDate*) inputDate {
     NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];

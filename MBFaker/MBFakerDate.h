@@ -10,15 +10,15 @@
 
 @interface MBFakerDate : NSObject
 
-+ (NSDate*)between:(NSDate*)from to:(NSDate*)to;
-+ (NSDate*)forward;
-+ (NSDate*)forward:(NSUInteger)days;
-+ (NSDate*)backward;
-+ (NSDate*)backward:(NSUInteger)days;
-+ (NSDate*)birthday;
-+ (NSDate*)birthdayFromAge:(NSUInteger)fromAge toAge:(NSUInteger)toAge;
++ (NSDateComponents*)between:(NSDate*)from to:(NSDate*)to;
++ (NSDateComponents*)forward;
++ (NSDateComponents*)forward:(NSUInteger)days;
++ (NSDateComponents*)backward;
++ (NSDateComponents*)backward:(NSUInteger)days;
++ (NSDateComponents*)birthday;
++ (NSDateComponents*)birthdayFromAge:(NSUInteger)fromAge toAge:(NSUInteger)toAge;
 
 // Helper method to get date string
-+ (NSString *) dateString:(NSDate*) date;
++ (NSString *) dateString:(NSDateComponents*) date;
 
 @end

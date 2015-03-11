@@ -10,21 +10,19 @@
 #import "MBFakerDate.h"
 
 typedef enum {
-    kAll      ,
-    kDay      ,
-    kNight    ,
-    kMorning  ,
-    kAfternoon,
-    kEvening  ,
-    kMidnight
+    kPeriodAll      ,
+    kPeriodDay      ,
+    kPeriodNight    ,
+    kPeriodMorning  ,
+    kPeriodAfternoon,
+    kPeriodEvening  ,
+    kPeriodMidnight
 } Period;
 
 @interface MBFakerTime : MBFakerDate
 
-+ (NSDate*)between:(NSDate*)from to:(NSDate*)to period:(Period) period;
-//+ (NSDate*)forward:(Period) period;
-+ (NSDate*)forward:(NSUInteger)days period:(Period) period;
-//+ (NSDate*)backward:(Period) period;
-+ (NSDate*)backward:(NSUInteger)days period:(Period) period;
++ (NSDateComponents*)between:(NSDate*)from to:(NSDate*)to period:(Period) period;
++ (NSDateComponents*)forward:(NSUInteger)days period:(Period) period;
++ (NSDateComponents*)backward:(NSUInteger)days period:(Period) period;
 
 @end
