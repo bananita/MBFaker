@@ -102,7 +102,7 @@
 // Private methods
 + (NSDateComponents*) componentForDate:(NSDate*) date {
     NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
-    NSUInteger preservedComponents = (NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit);
+    NSUInteger preservedComponents = (NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay);
     NSDateComponents *component = [calendar components:preservedComponents fromDate:date];
     
     return component;
@@ -110,7 +110,7 @@
 
 + (NSDate*) dateAtBeginningOfYear:(NSDate*) inputDate {
     NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
-    NSUInteger preservedComponents = (NSYearCalendarUnit);
+    NSUInteger preservedComponents = (NSCalendarUnitYear);
     return [calendar dateFromComponents:[calendar components:preservedComponents fromDate:inputDate]];
 }
 
