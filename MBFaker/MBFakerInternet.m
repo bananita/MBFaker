@@ -28,20 +28,64 @@
     
     for (int i=0; i<1+arc4random()%2;i++) {
         if (i == 0)
-            [components addObject:[MBFakerName firstName]];
+            [components addObject:[self fixUmlauts:[MBFakerName firstName]]];
         else
-            [components addObject:[MBFakerName lastName]];
+            [components addObject:[self fixUmlauts:[MBFakerName lastName]]];
     }
     
     return [[components componentsJoinedByString:@"."] lowercaseString];
 }
 
 + (NSString*)domainName {
-    return @"";
+    NSString *name = [NSString stringWithFormat: @"%@.%@", [self domainWord], [self domainSuffix]];
+    return name;
 }
 
 + (NSString*)domainWord {
-    return @"";
+    NSString *name = [(NSString*)[[MBFakerCompany name] componentsSeparatedByString: @" "][0] lowercaseString];
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\\W" options:NSRegularExpressionCaseInsensitive error: NULL];
+    NSString *modifiedString = [regex stringByReplacingMatchesInString:name options:0 range:NSMakeRange(0, [name length]) withTemplate:@""];
+    
+    return [self fixUmlauts:modifiedString];
+}
+
++ (NSString *)fixUmlauts:(NSString *)dirtyString {
+    NSError *error = NULL;
+    NSRegularExpression *regex = [NSRegularExpression
+                                  regularExpressionWithPattern:@"\[äöüß]"
+                                  options:NSRegularExpressionCaseInsensitive
+                                  error:&error];
+    
+    NSMutableString *mutableString = [[dirtyString lowercaseString] mutableCopy];
+    NSInteger offset = 0;
+    
+    for (NSTextCheckingResult *result in [regex matchesInString:dirtyString
+                                                        options:0
+                                                          range:NSMakeRange(0, [dirtyString length])]) {
+        
+        NSRange resultRange = [result range];
+        resultRange.location += offset;
+        
+        NSString *match = [regex replacementStringForResult:result
+                                                   inString:mutableString
+                                                     offset:offset
+                                                   template:@"$0"];
+        NSString *replacement;
+        if ([match isEqualToString:@"ä"]) {
+            replacement = @"ae";
+        } else if ([match isEqualToString:@"ö"]) {
+            replacement = @"oe";
+        } else if ([match isEqualToString:@"ü"]) {
+            replacement = @"ue";
+        }else if ([match isEqualToString:@"ß"]) {
+            replacement = @"ss";
+        }
+        
+        [mutableString replaceCharactersInRange:resultRange withString:replacement];
+        offset += ([replacement length] - resultRange.length);
+    }
+    
+    return [mutableString copy];
 }
 
 + (NSString*)domainSuffix {
