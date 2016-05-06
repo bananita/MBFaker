@@ -15,7 +15,7 @@
 + (NSDictionary*)translations {
     NSMutableDictionary* translationsDictionary = [[NSMutableDictionary alloc] init];
     
-    NSArray* translationPaths = [[NSBundle bundleForClass:[self class]] pathsForResourcesOfType:@"yml" inDirectory:@""];
+    NSArray* translationPaths = [[NSBundle bundleForClass:self] pathsForResourcesOfType:@"yml" inDirectory:@"" ];
     
     for (NSString* path in translationPaths) {
         NSInputStream *stream = [[NSInputStream alloc] initWithFileAtPath: path];
