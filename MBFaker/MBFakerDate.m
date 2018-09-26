@@ -22,7 +22,7 @@
 // Public methods
 + (NSDateComponents*)between:(NSDate*)from to:(NSDate*)to {
     
-    NSUInteger days = abs((to.timeIntervalSince1970 - from.timeIntervalSince1970) / NUM_SECONDS_PER_DAY);
+    NSUInteger days = (to.timeIntervalSince1970 - from.timeIntervalSince1970) / (float)NUM_SECONDS_PER_DAY;
 
     NSUInteger randomNumOfDays = arc4random() % days;
     
@@ -75,9 +75,9 @@
 
 + (NSDateComponents*)birthdayFromAge:(NSUInteger)fromAge toAge:(NSUInteger)toAge {
     
-    NSUInteger randomNumOfYears = abs(arc4random() % (toAge - fromAge));
+    NSUInteger randomNumOfYears = arc4random() % (toAge - fromAge);
     
-    NSUInteger randomTimeFromBeginningOfYear = abs(arc4random() % (365 * NUM_SECONDS_PER_DAY));
+    NSUInteger randomTimeFromBeginningOfYear = arc4random() % (365 * NUM_SECONDS_PER_DAY);
     
     NSInteger totalTimeDifference = -randomNumOfYears * 365 * NUM_SECONDS_PER_DAY + randomTimeFromBeginningOfYear;
     
