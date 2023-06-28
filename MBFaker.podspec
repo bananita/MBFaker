@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 	      s.summary               = 'Library that generates fake data.'
 	      s.homepage              = 'https://github.com/bananita/MBFaker'
 	      s.author                = { 'Michał Banasiak' => 'm.banasiak@icloud.com' }
-	      s.source                = { :git => 'https://github.com/BadChoice/MBFaker.git', :tag => s.version.to_s }
+	      s.source                = { :git => 'https://github.com/bananita/MBFaker.git', :tag => s.version.to_s }
 	      s.resources             = 'MBFaker/**/*.yml'
 
 	      s.description           = 'This library is a port of Ruby Faker library that generates fake data.'
